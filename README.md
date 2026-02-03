@@ -1,2 +1,2 @@
 # Escape-Tsunami-For-Brainrotes
-my own script
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Finalelele/Escape-Tsunami-For-Brainrotes/refs/heads/main/escape.lua"))()
