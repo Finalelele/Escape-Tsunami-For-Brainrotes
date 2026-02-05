@@ -65,11 +65,6 @@ local Toggle = Tab:CreateToggle({
 					v.CanCollide = false
 				end
 			end
-
-			if workspace:FindFirstChild("VIPWalls") then
-				local VIPWalls = workspace:WaitForChild("VIPWalls", 0.1)
-				VIPWalls:Destroy()
-			end
 		else
 			local defBottomWalls = workspace.DefaultMap.RightWalls
 			for _, v in pairs (defBottomWalls:GetDescendants()) do
@@ -139,11 +134,6 @@ local Toggle = Tab:CreateToggle({
 					v.Size = Vector3.new(6, 15, 1500)
 				end
 			end
-			
-			if workspace:FindFirstChild("VIPWalls") then
-				local VIPWalls = workspace:WaitForChild("VIPWalls", 0.1)
-				VIPWalls:Destroy()
-			end
 		else
 			local monBottomWalls = workspace.MoneyMap.DefaultStudioMap.RightWalls
 			for _, v in pairs (monBottomWalls:GetDescendants()) do
@@ -164,14 +154,83 @@ local Toggle = Tab:CreateToggle({
 			local mon5wall = workspace.MoneyMap.DefaultStudioMap.RightWalls.RightWall5
 			for _, v in pairs (mon5wall:GetDescendants()) do
 				if v.Name == "Bottom" then
-					v.Size = Vector3.new(6.049999237060547, 5.9999847412109375, 55)
+					v.Size = Vector3.new(6.049999237060547, 10, 60)
 				end
 			end
 
 			local mon7wall = workspace.MoneyMap.DefaultStudioMap.RightWalls.RightWall7
 			for _, v in pairs (mon7wall:GetDescendants()) do
 				if v.Name == "Bottom" then
-					v.Size = Vector3.new(6.049999237060547, 5.9999847412109375, 55)
+					v.Size = Vector3.new(6.049999237060547, 10, 60)
+				end
+			end
+		end
+	end,
+})
+
+local Toggle = Tab:CreateToggle({
+	Name = "Dell NLO Walls (use at nlo event)",
+	CurrentValue = false,
+	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		if Value then
+			local nloBottomWalls = workspace.MarsMap.RightWalls
+			for _, v in pairs (nloBottomWalls:GetDescendants()) do
+				if v.Name == "Part" then
+					v.Transparency = 1
+					v.CanCollide = false
+				end
+			end
+
+			local nloWalls = workspace.MarsMap.Walls
+			for _, v in pairs (nloWalls:GetDescendants()) do
+				if v.Name == "Mud" then
+					v.Transparency = 1
+					v.CanCollide = false
+				end
+			end
+
+			local nlo5wall = workspace.MarsMap.RightWalls.RightWall5
+			for _, v in pairs (nlo5wall:GetDescendants()) do
+				if v.Name == "Bottom" then
+					v.Size = Vector3.new(6., 10, 1525)
+				end
+			end
+
+			local nlo7wall = workspace.MarsMap.RightWalls.RightWall7
+			for _, v in pairs (nlo7wall:GetDescendants()) do
+				if v.Name == "Bottom" then
+					v.Size = Vector3.new(6, 15, 1500)
+				end
+			end
+		else
+			local nloBottomWalls = workspace.MarsMap.RightWalls
+			for _, v in pairs (nloBottomWalls:GetDescendants()) do
+				if v.Name == "Part" then
+					v.Transparency = 0
+					v.CanCollide = true
+				end
+			end
+
+			local nloWalls = workspace.MarsMap.Walls
+			for _, v in pairs (nloWalls:GetDescendants()) do
+				if v.Name == "Mud" then
+					v.Transparency = 0
+					v.CanCollide = true
+				end
+			end
+
+			local nlo5wall = workspace.MarsMap.RightWalls.RightWall5
+			for _, v in pairs (nlo5wall:GetDescendants()) do
+				if v.Name == "Bottom" then
+					v.Size = Vector3.new(6.05, 10, 80)
+				end
+			end
+
+			local nlo7wall = workspace.MarsMap.RightWalls.RightWall7
+			for _, v in pairs (nlo7wall:GetDescendants()) do
+				if v.Name == "Bottom" then
+					v.Size = Vector3.new(6, 15, 80)
 				end
 			end
 		end
@@ -187,23 +246,37 @@ local Toggle = Tab:CreateToggle({
 			local dopWall1 = Instance.new("Part")
 			dopWall1.Parent = workspace
 			dopWall1.Name = "dopWall1"
-			dopWall1.CFrame = CFrame.new(1175.45886, 4.02499771, -141.442123, -4.37113883e-08, 0, 1, 0, 1, 0, -1, 0, -4.37113883e-08)
+			dopWall1.CFrame = CFrame.new(1175.45886, 15.02499771, -141.3, -4.37113883e-08, 0, 1, 0, 1, 0, -1, 0, -4.37113883e-08)
 			dopWall1.Anchored = true
-			dopWall1.Size = Vector3.new(2, 50, 2048)
+			dopWall1.Size = Vector3.new(2, 30, 2048)
 			dopWall1.Transparency = 0.5
 
 			local dopWall2 = Instance.new("Part")
 			dopWall2.Parent = workspace
 			dopWall2.Name = "dopWall2"
-			dopWall2.CFrame = CFrame.new(2599.45874, 4.02499771, -141.442123, -4.37113883e-08, 0, 1, 0, 1, 0, -1, 0, -4.37113883e-08)
+			dopWall2.CFrame = CFrame.new(2599.45874, 15.02499771, -141.3, -4.37113883e-08, 0, 1, 0, 1, 0, -1, 0, -4.37113883e-08)
 			dopWall2.Anchored = true
-			dopWall2.Size = Vector3.new(2, 50, 800)
+			dopWall2.Size = Vector3.new(2, 30, 800)
 			dopWall2.Transparency = 0.5
 		else
 			local dw1 = workspace.dopWall1
 			local dw2 = workspace.dopWall2
 			dw1:Destroy()
 			dw2:Destroy()
+		end
+	end,
+})
+
+local Toggle = Tab:CreateToggle({
+	Name = "Delete Vip Walls",
+	CurrentValue = false,
+	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		if Value then
+			local vip = workspace.DefaultMap_SharedInstances.VIPWalls
+			vip:Destroy()
+		else
+			--
 		end
 	end,
 })
