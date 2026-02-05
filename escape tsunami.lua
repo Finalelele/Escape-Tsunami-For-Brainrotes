@@ -273,8 +273,14 @@ local Toggle = Tab:CreateToggle({
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
 		if Value then
-			local vip = workspace.DefaultMap_SharedInstances.VIPWalls
-			vip:Destroy()
+			if workspace:FindFirstChild("DefaultMap_SharedInstances") then
+				local defVip = workspace.DefaultMap_SharedInstances.VIPWalls
+				defVip:Destroy()
+			end
+			if workspace:FindFirstChild("MoneyMap_SharedInstances") then
+				local monVip = workspace.MoneyMap_SharedInstances.VIPWalls
+				monVip:Destroy()
+			end
 		else
 			--
 		end
