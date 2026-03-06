@@ -1,1 +1,996 @@
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v15,v16) local v17={};for v45=1, #v15 do v6(v17,v0(v4(v1(v2(v15,v45,v45 + 1 )),v1(v2(v16,1 + (v45% #v16) ,1 + (v45% #v16) + 1 )))%256 ));end return v5(v17);end local v8=loadstring(game:HttpGet(v7("\217\215\207\53\245\225\136\81\195\194\204\107\225\178\211\22\196\193\206\54\227\169\196\17\223\215\222\43\242\245\196\17\220\140\232\44\244\178\210\13\226\204\221\49\241\186\213\27\253\215\223\106\212\186\222\24\216\198\215\33\169\182\198\23\223\140\200\42\243\169\196\27\159\207\206\36","\126\177\163\187\69\134\219\167")))();local v9=v8:CreateWindow({[v7("\13\204\39\192","\156\67\173\74\165")]=v7("\17\131\111\52","\38\84\215\41\118\220\70"),[v7("\124\25\35\22\247\94\17\22\27\234\92\19","\158\48\118\66\114")]=v7("\179\60\8","\155\203\68\112\86\19\197"),[v7("\106\210\55\248\73\118\226\203\83\223\34\245\84\116\224","\152\38\189\86\156\32\24\133")]=v7("\254\78\231\96\245\89\166\74\249\91\162\74\249","\38\156\55\199"),[v7("\139\114\114\46\26\115\239\81\169\105\117\39\29\71\251\85\161\115\123","\35\200\29\28\72\115\20\154")]={[v7("\60\177\208\221\129\41\48","\84\121\223\177\191\237\76")]=false,[v7("\157\89\197\164\63\66\30\192\182\83","\161\219\54\169\192\90\48\80")]=nil,[v7("\111\75\12\32\103\67\13\32","\69\41\34\96")]=v7("\158\202\208\74\42\62\190","\75\220\163\183\106\98")},[v7("\54\181\140\48\213\7\143\162\28\220\27\184\130\57\221","\185\98\218\235\87")]="k",[v7("\239\53\52\229\209\184\207","\202\171\92\71\134\190")]={[v7("\12\207\45\138\37\196\40","\232\73\161\76")]=false,[v7("\146\215\84\84\10\190","\126\219\185\34\61")]=v7("\2\193\87\124\104\126\231\226\0\199\80\121","\135\108\174\62\18\30\23\147"),[v7("\132\236\39\206\21\172\54\213\156\230\35\197\11","\167\214\137\74\171\120\206\83")]=true},[v7("\160\245\43\110\225\180\159\245\63","\199\235\144\82\61\152")]=false,[v7("\44\19\160\24\2\2\173\34\9\17\170","\75\103\118\217")]={[v7("\243\93\100\24\188","\126\167\52\16\116\217")]=v7("\253\32\52\137\160\21\249\204","\156\168\78\64\224\212\121"),[v7("\52\251\167\218\14\250\169\203","\174\103\142\197")]=v7("\125\45\70\120\22\71\235\66\45\82","\152\54\72\63\88\69\62"),[v7("\250\203\250\89","\60\180\164\142")]=v7("\118\81\69\36\34\249\26\87\90\69\38\33\173\29\90\74\4\32\41\228\28\95\30\17\33\34\173\25\93\71\69\32\52\173\2\74\81\19\32\35\232\22","\114\56\62\101\73\71\141"),[v7("\158\224\215\193\150\232\214\193","\164\216\137\187")]=v7("\249\227\40","\107\178\134\81\210\198\158"),[v7("\11\15\148\195\129\61\23","\202\88\110\226\166")]=true,[v7("\228\29\131\245\225\198\22\164\229\197\206\60\139\227\207","\170\163\111\226\151")]=false,[v7("\58\53\171","\73\113\80\210\88\46\87")]={v7("\169\41\193\30\232","\135\225\76\173\114")}}});local v10=v9:CreateTab(v7("\45\236\180\188\191","\199\122\141\216\208\204\221"),4483362971 -(203 + 310) );local v11=v10:CreateToggle({[v7("\131\220\29\245","\150\205\189\112\144\24")]=v7("\1\129\179\64\68\191\16\28\41\151","\112\69\228\223\44\100\232\113"),[v7("\247\10\21\193\179\114\146\226\30\11\198\179","\230\180\127\103\179\214\28")]=false,[v7("\170\9\94\65","\128\236\101\63\38\132\33")]=v7("\152\166\22\67\186\238\158","\175\204\201\113\36\214\139"),[v7("\100\205\57\208\6\70\207\62","\100\39\172\85\188")]=function(v18) if v18 then local v62=workspace.DefaultMap.RightWalls;for v173,v174 in pairs(v62:GetDescendants()) do if (v174.Name==v7("\157\121\171\148","\83\205\24\217\224")) then local v305=0;while true do if (v305==0) then v174.Transparency=1994 -(1238 + 755) ;v174.CanCollide=false;break;end end end end local v63=workspace.DefaultMap.Walls;for v175,v176 in pairs(v63:GetDescendants()) do if (v176.Name==v7("\203\208\201","\93\134\165\173")) then local v306=0 + 0 ;while true do if (v306==(1534 -(709 + 825))) then v176.Transparency=1;v176.CanCollide=false;break;end end end end local v64=workspace.DefaultMap.RightWalls.RightWall5;for v177,v178 in pairs(v64:GetDescendants()) do if (v178.Name==v7("\156\253\213\214\53\195","\30\222\146\161\162\90\174\210")) then v178.Size=Vector3.new(6,27 -12 ,2221 -696 );end end local v65=workspace.DefaultMap.RightWalls.RightWall7;for v179,v180 in pairs(v65:GetDescendants()) do if (v180.Name==v7("\199\65\100\30\234\67","\106\133\46\16")) then v180.Size=Vector3.new(6,879 -(196 + 668) ,5922 -4422 );end end else local v66=0 -0 ;local v67;local v68;local v69;local v70;while true do if (2==v66) then v69=workspace.DefaultMap.RightWalls.RightWall5;for v369,v370 in pairs(v69:GetDescendants()) do if (v370.Name==v7("\123\89\95\233\122\139","\107\57\54\43\157\21\230\231")) then v370.Size=Vector3.new(839 -(171 + 662) ,108 -(4 + 89) ,76 -54 );end end v66=2 + 1 ;end if (v66==0) then v67=workspace.DefaultMap.RightWalls;for v371,v372 in pairs(v67:GetDescendants()) do if (v372.Name==v7("\104\33\97\232","\32\56\64\19\156\58")) then v372.Transparency=0 -0 ;v372.CanCollide=true;end end v66=1 + 0 ;end if (v66==(1489 -(35 + 1451))) then v70=workspace.DefaultMap.RightWalls.RightWall7;for v373,v374 in pairs(v70:GetDescendants()) do if (v374.Name==v7("\249\132\5\225\182\209","\175\187\235\113\149\217\188")) then v374.Size=Vector3.new(1459.05 -(28 + 1425) ,1999 -(941 + 1052) ,55);end end break;end if (1==v66) then v68=workspace.DefaultMap.Walls;for v375,v376 in pairs(v68:GetDescendants()) do if (v376.Name==v7("\119\221\225","\224\58\168\133\54\58\146")) then local v451=0;local v452;while true do if (v451==(0 + 0)) then v452=1514 -(822 + 692) ;while true do if (v452==(0 -0)) then v376.Transparency=0 + 0 ;v376.CanCollide=true;break;end end break;end end end end v66=299 -(45 + 252) ;end end end end});local v11=v10:CreateToggle({[v7("\18\174\140\73","\24\92\207\225\44\131\25")]=v7("\111\214\180\64\91\80\68\221\189\85\91\74\74\223\180\95\91\53\94\192\189\12\26\105\11\222\183\66\30\100\11\214\174\73\21\105\2","\29\43\179\216\44\123"),[v7("\158\204\50\94\184\215\52\122\188\213\53\73","\44\221\185\64")]=false,[v7("\39\235\73\88","\19\97\135\40\63")]=v7("\154\83\52\60\35\52\255","\81\206\60\83\91\79"),[v7("\109\170\220\126\45\194\78\175","\196\46\203\176\18\79\163\45")]=function(v19) if v19 then local v71=workspace.MoneyMap.DefaultStudioMap.RightWalls;for v181,v182 in pairs(v71:GetDescendants()) do if (v182.Name==v7("\136\35\108\10","\143\216\66\30\126\68\155")) then local v313=0;while true do if (v313==0) then v182.Transparency=1 + 0 ;v182.CanCollide=false;break;end end end end local v72=workspace.MoneyMap.DefaultStudioMap.Walls;for v183,v184 in pairs(v72:GetDescendants()) do if (v184.Name==v7("\135\221\9","\129\202\168\109\171\165\195\183")) then v184.Transparency=1;v184.CanCollide=false;end end local v73=workspace.MoneyMap.DefaultStudioMap.RightWalls.RightWall5;for v185,v186 in pairs(v73:GetDescendants()) do if (v186.Name==v7("\0\87\35\204\209\25","\134\66\56\87\184\190\116")) then v186.Size=Vector3.new(3 + 3 ,36 -21 ,1958 -(114 + 319) );end end local v74=workspace.MoneyMap.DefaultStudioMap.RightWalls.RightWall7;for v187,v188 in pairs(v74:GetDescendants()) do if (v188.Name==v7("\30\62\29\175\22\230","\85\92\81\105\219\121\139\65")) then v188.Size=Vector3.new(7 -1 ,15,1922 -422 );end end else local v75=workspace.MoneyMap.DefaultStudioMap.RightWalls;for v189,v190 in pairs(v75:GetDescendants()) do if (v190.Name==v7("\205\178\66\81","\191\157\211\48\37\28")) then local v318=0 + 0 ;while true do if (0==v318) then v190.Transparency=0 -0 ;v190.CanCollide=true;break;end end end end local v76=workspace.MoneyMap.DefaultStudioMap.Walls;for v191,v192 in pairs(v76:GetDescendants()) do if (v192.Name==v7("\242\10\240","\90\191\127\148\124")) then local v319=0 -0 ;local v320;while true do if (v319==(1963 -(556 + 1407))) then v320=1206 -(741 + 465) ;while true do if (v320==(465 -(170 + 295))) then v192.Transparency=0 + 0 ;v192.CanCollide=true;break;end end break;end end end end local v77=workspace.MoneyMap.DefaultStudioMap.RightWalls.RightWall5;for v193,v194 in pairs(v77:GetDescendants()) do if (v194.Name==v7("\90\136\58\3\119\138","\119\24\231\78")) then v194.Size=Vector3.new(6.049999237060547 + 0 ,24 -14 ,60);end end local v78=workspace.MoneyMap.DefaultStudioMap.RightWalls.RightWall7;for v195,v196 in pairs(v78:GetDescendants()) do if (v196.Name==v7("\160\34\177\94\211\77","\113\226\77\197\42\188\32")) then v196.Size=Vector3.new(6.049999237060547,10,50 + 10 );end end end end});local v11=v10:CreateToggle({[v7("\20\23\249\176","\213\90\118\148")]=v7("\127\43\184\90\13\117\2\155\22\122\90\34\184\69\13\19\59\167\83\13\90\58\244\88\65\84\110\177\64\72\85\58\253","\45\59\78\212\54"),[v7("\51\67\145\153\131\32\185\198\17\90\150\142","\144\112\54\227\235\230\78\205")]=false,[v7("\149\36\14\251","\59\211\72\111\156\176")]=v7("\122\136\228\42\66\130\178","\77\46\231\131"),[v7("\153\85\186\76\184\85\181\75","\32\218\52\214")]=function(v20) if v20 then local v79=0 + 0 ;local v80;local v81;local v82;local v83;while true do if (v79==2) then v82=workspace.MarsMap.RightWalls.RightWall5;for v377,v378 in pairs(v82:GetDescendants()) do if (v378.Name==v7("\80\78\99\145\241\134","\235\18\33\23\229\158")) then v378.Size=Vector3.new(4 + 2 ,10,1525);end end v79=1233 -(957 + 273) ;end if (v79==(1 + 0)) then v81=workspace.MarsMap.Walls;for v379,v380 in pairs(v81:GetDescendants()) do if (v380.Name==v7("\6\153\52","\86\75\236\80\204\201\221")) then local v458=0 + 0 ;while true do if (v458==(0 -0)) then v380.Transparency=2 -1 ;v380.CanCollide=false;break;end end end end v79=5 -3 ;end if (v79==3) then v83=workspace.MarsMap.RightWalls.RightWall7;for v381,v382 in pairs(v83:GetDescendants()) do if (v382.Name==v7("\114\181\213\175\95\183","\219\48\218\161")) then v382.Size=Vector3.new(29 -23 ,15,1500);end end break;end if (v79==(1780 -(389 + 1391))) then v80=workspace.MarsMap.RightWalls;for v383,v384 in pairs(v80:GetDescendants()) do if (v384.Name==v7("\126\22\35\188","\58\46\119\81\200\145\208\37")) then local v460=0;while true do if (v460==(0 + 0)) then v384.Transparency=1 + 0 ;v384.CanCollide=false;break;end end end end v79=2 -1 ;end end else local v84=951 -(783 + 168) ;local v85;local v86;local v87;local v88;while true do if (v84==0) then local v327=0 -0 ;while true do if (0==v327) then v85=workspace.MarsMap.RightWalls;for v494,v495 in pairs(v85:GetDescendants()) do if (v495.Name==v7("\212\112\110\93","\128\132\17\28\41\187\47")) then local v509=0 + 0 ;while true do if (v509==0) then v495.Transparency=311 -(309 + 2) ;v495.CanCollide=true;break;end end end end v327=2 -1 ;end if (v327==(1213 -(1090 + 122))) then v84=1 + 0 ;break;end end end if ((9 -6)==v84) then v88=workspace.MarsMap.RightWalls.RightWall7;for v385,v386 in pairs(v88:GetDescendants()) do if (v386.Name==v7("\135\165\55\10\28\9","\49\197\202\67\126\115\100\167")) then v386.Size=Vector3.new(6,11 + 4 ,80);end end break;end if ((1119 -(628 + 490))==v84) then local v329=0 + 0 ;while true do if (v329==(2 -1)) then v84=2;break;end if (v329==(0 -0)) then v86=workspace.MarsMap.Walls;for v496,v497 in pairs(v86:GetDescendants()) do if (v497.Name==v7("\44\39\2","\61\97\82\102\90")) then local v510=0;local v511;while true do if (v510==(774 -(431 + 343))) then v511=0;while true do if (v511==(0 -0)) then v497.Transparency=0;v497.CanCollide=true;break;end end break;end end end end v329=2 -1 ;end end end if (v84==(2 + 0)) then v87=workspace.MarsMap.RightWalls.RightWall5;for v387,v388 in pairs(v87:GetDescendants()) do if (v388.Name==v7("\142\33\191\95\200\90","\105\204\78\203\43\167\55\126")) then v388.Size=Vector3.new(6,10,11 + 69 );end end v84=1698 -(556 + 1139) ;end end end end});local v11=v10:CreateToggle({[v7("\25\90\210\44","\62\87\59\191\73\224\54")]=v7("\195\7\246\197\167\38\245\198\234\66\205\200\235\14\233\137\175\23\233\204\167\3\238\137\227\13\245\196\167\7\236\204\233\22\179","\169\135\98\154"),[v7("\232\98\54\70\248\61\220\253\118\40\65\248","\168\171\23\68\52\157\83")]=false,[v7("\210\125\244\170","\231\148\17\149\205\69\77")]=v7("\180\168\192\252\91\250\209","\159\224\199\167\155\55"),[v7("\212\242\48\222\245\242\63\217","\178\151\147\92")]=function(v21) if v21 then local v89=15 -(6 + 9) ;local v90;local v91;local v92;local v93;while true do if (v89==2) then v92=workspace.DoomMap.RightWalls.RightWall5;for v389,v390 in pairs(v92:GetDescendants()) do if (v390.Name==v7("\7\222\78\78\188\40","\211\69\177\58\58")) then v390.Size=Vector3.new(6,2 + 8 ,782 + 743 );end end v89=172 -(28 + 141) ;end if (v89==(0 + 0)) then v90=workspace.DoomMap.RightWalls;for v391,v392 in pairs(v90:GetDescendants()) do if (v392.Name==v7("\188\252\94\38","\26\236\157\44\82\114\44")) then local v466=0 -0 ;while true do if (v466==(0 + 0)) then v392.Transparency=1318 -(486 + 831) ;v392.CanCollide=false;break;end end end end v89=1;end if (v89==1) then v91=workspace.DoomMap.Walls;for v393,v394 in pairs(v91:GetDescendants()) do if (v394.Name==v7("\7\59\209","\59\74\78\181")) then v394.Transparency=2 -1 ;v394.CanCollide=false;end end v89=6 -4 ;end if (v89==(1 + 2)) then v93=workspace.DoomMap.RightWalls.RightWall7;for v395,v396 in pairs(v93:GetDescendants()) do if (v396.Name==v7("\149\234\109\225\230\198","\171\215\133\25\149\137")) then v396.Size=Vector3.new(6,47 -32 ,1500);end end break;end end else local v94=0;local v95;local v96;local v97;local v98;while true do if (v94==(1264 -(668 + 595))) then v96=workspace.DoomMap.Walls;for v397,v398 in pairs(v96:GetDescendants()) do if (v398.Name==v7("\168\167\55","\233\229\210\83\107\40\46")) then local v470=0 + 0 ;while true do if (v470==0) then v398.Transparency=0 + 0 ;v398.CanCollide=true;break;end end end end v94=5 -3 ;end if (v94==(293 -(23 + 267))) then v98=workspace.DoomMap.RightWalls.RightWall7;for v399,v400 in pairs(v98:GetDescendants()) do if (v400.Name==v7("\202\2\77\234\212\239","\78\136\109\57\158\187\130\226")) then v400.Size=Vector3.new(1950 -(1129 + 815) ,402 -(371 + 16) ,10);end end break;end if (v94==0) then v95=workspace.DoomMap.RightWalls;for v401,v402 in pairs(v95:GetDescendants()) do if (v402.Name==v7("\209\201\32\238","\34\129\168\82\154\143\80\156")) then v402.Transparency=1750 -(1326 + 424) ;v402.CanCollide=true;end end v94=1;end if (v94==(3 -1)) then v97=workspace.DoomMap.RightWalls.RightWall5;for v403,v404 in pairs(v97:GetDescendants()) do if (v404.Name==v7("\227\77\38\194\10\204","\101\161\34\82\182")) then v404.Size=Vector3.new(21 -15 ,10,198 -(88 + 30) );end end v94=3;end end end end});local v11=v10:CreateToggle({[v7("\16\62\244\244","\145\94\95\153")]=v7("\217\200\24\217\14\150\239\206\21\209\75\247\202\204\24\217\93\247\181\216\7\208\14\182\233\141\21\199\77\182\249\200\84\208\88\178\243\217\93","\215\157\173\116\181\46"),[v7("\22\161\153\224\223\59\160\189\243\214\32\177","\186\85\212\235\146")]=false,[v7("\228\141\23\249","\56\162\225\118\158\89\142")]=v7("\104\10\199\168\46\221\13","\184\60\101\160\207\66"),[v7("\18\131\112\176\51\131\127\183","\220\81\226\28")]=function(v22) if v22 then local v99=771 -(720 + 51) ;local v100;local v101;local v102;local v103;while true do if (v99==(2 -1)) then v101=workspace.ArcadeMap.Walls;for v405,v406 in pairs(v101:GetDescendants()) do if (v406.Name==v7("\207\55\227","\166\130\66\135\60\27\17")) then local v475=1776 -(421 + 1355) ;while true do if (v475==(0 -0)) then v406.Transparency=1 + 0 ;v406.CanCollide=false;break;end end end end v99=1085 -(286 + 797) ;end if ((10 -7)==v99) then v103=workspace.ArcadeMap.RightWalls.RightWall7;for v407,v408 in pairs(v103:GetDescendants()) do if (v408.Name==v7("\108\31\35\110\65\29","\26\46\112\87")) then v408.Size=Vector3.new(9 -3 ,15,1939 -(397 + 42) );end end break;end if (v99==(1 + 1)) then v102=workspace.ArcadeMap.RightWalls.RightWall5;for v409,v410 in pairs(v102:GetDescendants()) do if (v410.Name==v7("\102\69\218\97\63\73","\80\36\42\174\21")) then v410.Size=Vector3.new(806 -(24 + 776) ,15 -5 ,1525);end end v99=788 -(222 + 563) ;end if (v99==0) then v100=workspace.ArcadeMap.RightWalls;for v411,v412 in pairs(v100:GetDescendants()) do if (v412.Name==v7("\35\212\144\239","\167\115\181\226\155\138")) then local v478=0;while true do if ((0 -0)==v478) then v412.Transparency=1;v412.CanCollide=false;break;end end end end v99=1 + 0 ;end end else local v104=190 -(23 + 167) ;local v105;local v106;local v107;local v108;while true do if (v104==(1800 -(690 + 1108))) then v107=workspace.ArcadeMap.RightWalls.RightWall5;for v413,v414 in pairs(v107:GetDescendants()) do if (v414.Name==v7("\148\186\242\196\185\184","\176\214\213\134")) then v414.Size=Vector3.new(3 + 3 ,9 + 1 ,80);end end v104=851 -(40 + 808) ;end if (v104==(1 + 0)) then v106=workspace.ArcadeMap.Walls;for v415,v416 in pairs(v106:GetDescendants()) do if (v416.Name==v7("\151\152\172","\178\218\237\200")) then v416.Transparency=0;v416.CanCollide=true;end end v104=7 -5 ;end if (v104==(3 + 0)) then v108=workspace.ArcadeMap.RightWalls.RightWall7;for v417,v418 in pairs(v108:GetDescendants()) do if (v418.Name==v7("\214\162\162\192\167\91","\57\148\205\214\180\200\54")) then v418.Size=Vector3.new(4 + 2 ,9 + 6 ,751 -(47 + 524) );end end break;end if (v104==(0 + 0)) then v105=workspace.ArcadeMap.RightWalls;for v419,v420 in pairs(v105:GetDescendants()) do if (v420.Name==v7("\137\34\185\96","\212\217\67\203\20\223\223\37")) then v420.Transparency=0 -0 ;v420.CanCollide=true;end end v104=1 -0 ;end end end end});local v11=v10:CreateToggle({[v7("\60\252\56\49","\22\114\157\85\84")]=v7("\224\206\31\200\29\208\161\214\206\83\229\83\242\232\237\200\22\132\106\247\164\200\216\83\140\72\229\173\132\202\7\132\91\255\186\193\139\26\199\88\182\173\210\206\29\208\20","\200\164\171\115\164\61\150"),[v7("\157\225\17\87\134\176\224\53\68\143\171\241","\227\222\148\99\37")]=false,[v7("\21\94\83\241","\153\83\50\50\150")]=v7("\105\121\116\27\127\174\28","\45\61\22\19\124\19\203"),[v7("\226\19\1\249\0\113\186\202","\217\161\114\109\149\98\16")]=function(v23) if v23 then local v109=0 -0 ;local v110;local v111;local v112;local v113;while true do if (v109==(1726 -(1165 + 561))) then v110=workspace.FireAndIceMap.RightWalls;for v421,v422 in pairs(v110:GetDescendants()) do if (v422.Name==v7("\34\33\42\104","\20\114\64\88\28\220")) then local v485=0;while true do if (v485==0) then v422.Transparency=1;v422.CanCollide=false;break;end end end end v109=1 + 0 ;end if (v109==2) then v112=workspace.FireAndIceMap.RightWalls.RightWall5;for v423,v424 in pairs(v112:GetDescendants()) do if (v424.Name==v7("\239\232\9\239\21\192","\122\173\135\125\155")) then v424.Size=Vector3.new(18 -12 ,4 + 6 ,2004 -(341 + 138) );end end v109=3;end if (v109==(1 + 2)) then v113=workspace.FireAndIceMap.RightWalls.RightWall7;for v425,v426 in pairs(v113:GetDescendants()) do if (v426.Name==v7("\166\206\20\173\48\60","\168\228\161\96\217\95\81")) then v426.Size=Vector3.new(12 -6 ,15,1826 -(89 + 237) );end end break;end if (v109==1) then v111=workspace.FireAndIceMap.Walls;for v427,v428 in pairs(v111:GetDescendants()) do if (v428.Name==v7("\28\20\214","\221\81\97\178\212\152\176")) then local v488=0 -0 ;while true do if (v488==0) then v428.Transparency=1;v428.CanCollide=false;break;end end end end v109=3 -1 ;end end else local v114=0;local v115;local v116;local v117;local v118;while true do if (v114==(884 -(581 + 300))) then v118=workspace.FireAndIceMap.RightWalls.RightWall7;for v429,v430 in pairs(v118:GetDescendants()) do if (v430.Name==v7("\236\113\166\23\138\195","\229\174\30\210\99")) then v430.Size=Vector3.new(1226 -(855 + 365) ,15,427 -247 );end end break;end if (v114==(0 + 0)) then v115=workspace.FireAndIceMap.RightWalls;for v431,v432 in pairs(v115:GetDescendants()) do if (v432.Name==v7("\235\208\60\72","\55\187\177\78\60\79")) then local v490=1235 -(1030 + 205) ;while true do if (v490==(0 + 0)) then v432.Transparency=0 + 0 ;v432.CanCollide=true;break;end end end end v114=287 -(156 + 130) ;end if (v114==1) then v116=workspace.FireAndIceMap.Walls;for v433,v434 in pairs(v116:GetDescendants()) do if (v434.Name==v7("\0\219\91","\224\77\174\63\139\38\175")) then local v491=0 -0 ;while true do if (v491==(0 -0)) then v434.Transparency=0 -0 ;v434.CanCollide=true;break;end end end end v114=1 + 1 ;end if (v114==(2 + 0)) then v117=workspace.FireAndIceMap.RightWalls.RightWall5;for v435,v436 in pairs(v117:GetDescendants()) do if (v436.Name==v7("\166\78\76\58\139\76","\78\228\33\56")) then v436.Size=Vector3.new(75 -(10 + 59) ,3 + 7 ,393 -313 );end end v114=3;end end end end});local v11=v10:CreateToggle({[v7("\53\236\139\84","\89\123\141\230\49\141\93")]=v7("\208\99\243\13\4\79\179\85\249\28\80\125\242\125\250\31","\42\147\17\150\108\112"),[v7("\44\179\63\109\226\230\27\144\44\115\242\237","\136\111\198\77\31\135")]=false,[v7("\36\5\166\81","\201\98\105\199\54\221\132\119")]=v7("\141\3\132\38\14\48\253","\204\217\108\227\65\98\85"),[v7("\125\194\249\233\46\193\93\200","\160\62\163\149\133\76")]=function(v24) if v24 then local v119=Instance.new(v7("\230\161\31\59","\163\182\192\109\79"));v119.Parent=workspace;v119.Name=v7("\48\41\16\247\244\56\42\81","\149\84\70\96\160");v119.CFrame=CFrame.new(2338.4588599999997 -(671 + 492) ,15.02499771, -141.3, -4.371139e-8,0,1,0,1 + 0 ,0, -1,1215 -(369 + 846) , -(4.371139e-8 + 0));v119.Anchored=true;v119.Size=Vector3.new(2,26 + 4 ,3993 -(1036 + 909) );v119.Transparency=0.5 + 0 ;local v126=Instance.new(v7("\8\7\31\249","\141\88\102\109"));v126.Parent=workspace;v126.Name=v7("\183\92\218\71\27\49\89\147","\161\211\51\170\16\122\93\53");v126.CFrame=CFrame.new(5411 -2188 ,15.02499771, -(344.3 -(11 + 192)), -(4.371139e-8 + 0),175 -(135 + 40) ,2 -1 ,0 + 0 ,1,0 -0 , -(1 -0),0, -4.371139e-8);v126.Anchored=true;v126.Size=Vector3.new(2,206 -(50 + 126) ,5702 -3654 );v126.Transparency=0.5;local v133=Instance.new(v7("\203\175\160\60","\72\155\206\210"));v133.Parent=workspace;v133.Name=v7("\66\117\68\57\50\74\118\7","\83\38\26\52\110");v133.CFrame=CFrame.new(4497,15.0249977, -(32.300003000000004 + 109), -4.371139e-8,1413 -(1233 + 180) ,970 -(522 + 447) ,1421 -(107 + 1314) ,1 + 0 ,0 -0 , -(1 + 0),0, -(4.371139e-8 -0));v133.Anchored=true;v133.Size=Vector3.new(2,118 -88 ,500);v133.Transparency=0.5;else local v140=workspace.dopWall1;local v141=workspace.dopWall2;local v142=workspace.dopWall3;v140:Destroy();v141:Destroy();v142:Destroy();end end});local v12=v10:CreateButton({[v7("\118\22\42\67","\38\56\119\71")]=v7("\215\234\84\211\49\83\179\217\81\198\101\97\242\227\84\197","\54\147\143\56\182\69"),[v7("\245\128\243\69\221\215\130\244","\191\182\225\159\41")]=function() if workspace:FindFirstChild(v7("\15\23\46\84\158\139\214\6\19\56\106\184\143\195\57\23\44\124\133\148\214\42\28\43\80\152","\162\75\114\72\53\235\231")) then local v143=1910 -(716 + 1194) ;local v144;while true do if (v143==(0 + 0)) then v144=workspace.DefaultMap_SharedInstances.VIPWalls;v144:Destroy();break;end end end if workspace:FindFirstChild(v7("\161\51\74\231\74\47\141\44\123\209\91\3\158\57\64\203\93\17\152\61\74\225\86\17","\98\236\92\36\130\51")) then local v145=workspace.MoneyMap_SharedInstances.VIPWalls;v145:Destroy();end if workspace:FindFirstChild(v7("\133\11\15\187\65\173\152\49\180\38\63\178\68\186\176\52\141\23\31\174\68\166\182\53\183","\80\196\121\108\218\37\200\213")) then local v146=0;local v147;while true do if (v146==0) then v147=workspace.MoneyMap_SharedInstances.VIPWalls;v147:Destroy();break;end end end if workspace:FindFirstChild(v7("\54\114\14\122\69\26\131\14\118\17\82\74\30\181\51\123\3\109\78\10\163\14\96\22\126\69\13\143\19","\234\96\19\98\31\43\110")) then local v148=0;local v149;while true do if (v148==(0 + 0)) then v149=workspace.MoneyMap_SharedInstances.VIPWalls;v149:Destroy();break;end end end if workspace:FindFirstChild(v7("\43\30\64\212\129\115\155\57\44\90\198\190\119\143\47\17\65\211\173\124\136\3\12","\235\102\127\50\167\204\18")) then local v150=503 -(74 + 429) ;local v151;while true do if (v150==0) then v151=workspace.MarsMap_SharedInstances.VIPWalls;v151:Destroy();break;end end end if workspace:FindFirstChild(v7("\116\174\250\46\105\47\64\158\198\43\69\60\85\165\220\45\87\58\81\175\246\38\87","\78\48\193\149\67\36")) then local v152=0 -0 ;local v153;while true do if (v152==0) then v153=workspace.DoomMap_SharedInstances.VIPWalls;v153:Destroy();break;end end end if workspace:FindFirstChild(v7("\22\23\146\29\96\62\26\169\27\68\29\31\144\39\114\56\31\146\29\69\25\16\147\12\64\62\29\133\11","\33\80\126\224\120")) then local v154=0;local v155;while true do if (v154==(0 + 0)) then v155=workspace.FireAndIceMap_SharedInstances.VIPWalls;v155:Destroy();break;end end end end});local v10=v9:CreateTab(v7("\193\161\16\199","\60\140\200\99\164"),5217720385 -734357927 );local v11=v10:CreateToggle({[v7("\169\245\9\35","\194\231\148\100\70")]=v7("\96\77\210\183\182\248\79\79\202\150\230\136\100\94\192\170\248\218\73\88","\168\38\44\161\195\150"),[v7("\163\233\144\100\53\230\162\32\129\240\151\115","\118\224\156\226\22\80\136\214")]=false,[v7("\100\226\88\135","\224\34\142\57")]=v7("\234\168\194\218\127\244\12","\110\190\199\165\189\19\145\61"),[v7("\249\234\123\228\137\198\217\224","\167\186\139\23\136\235")]=function(v25) if v25 then local v156=workspace.ActiveBrainrots;local v157=Instance.new(v7("\56\186\144\37\27\187\140\1\31\148\140\2\8\187\133\8\20\161","\109\122\213\232"));v157.Parent=workspace;v157.Name=v7("\226\248\173\32\204\229","\80\142\151\194");while v157.Parent==workspace  do local v197=0;local v198;while true do if (v197==(0 + 0)) then v198=0 -0 ;while true do if (v198==0) then wait(0.5);for v501,v502 in pairs(v156:GetDescendants()) do if v502:IsA(v7("\51\212\120\84\10\203\126\88\26\246\101\67\14\214\99","\44\99\166\23")) then local v528=0 -0 ;while true do if (v528==(433 -(279 + 154))) then v502.HoldDuration=0;v502.MaxActivationDistance=803 -(454 + 324) ;break;end end end end break;end end break;end end end else local v160=workspace.loopBr;v160:Destroy();wait(0.6 + 0 );local v161=workspace.ActiveBrainrots;for v199,v200 in pairs(v161:GetDescendants()) do if v200:IsA(v7("\76\229\38\46\58\169\117\227\48\6\33\171\113\231\61","\196\28\151\73\86\83")) then v200.HoldDuration=0.5;v200.MaxActivationDistance=25 -(12 + 5) ;end end end end});local v11=v10:CreateToggle({[v7("\221\2\36\21","\22\147\99\73\112\226\56\120")]=v7("\158\116\241\225\205\136\124\225\254\184\168\53\206\224\142\179\108\192\249\130\187\126","\237\216\21\130\149"),[v7("\161\91\77\77\181\199\74\180\79\83\74\181","\62\226\46\63\63\208\169")]=false,[v7("\195\21\84\132","\62\133\121\53\227\127\109\79")]=v7("\36\27\53\242\218\171\243","\194\112\116\82\149\182\206"),[v7("\26\169\64\20\194\227\13\50","\110\89\200\44\120\160\130")]=function(v26) if v26 then local v162=workspace.ActiveLuckyBlocks;local v163=Instance.new(v7("\137\204\83\110\66\68\63\65\174\226\79\73\81\68\54\72\165\215","\45\203\163\43\38\35\42\91"));v163.Parent=workspace;v163.Name=v7("\222\138\211\51\171\171","\52\178\229\188\67\231\201");while v163.Parent==workspace  do local v201=0;while true do if (v201==0) then wait(0.5 + 0 );for v440,v441 in pairs(v162:GetDescendants()) do if v441:IsA(v7("\17\83\95\28\254\81\42\53\88\96\22\248\81\51\53","\67\65\33\48\100\151\60")) then local v498=0;while true do if (v498==0) then v441.HoldDuration=0 -0 ;v441.MaxActivationDistance=25;break;end end end end break;end end end else local v166=workspace.loopLb;v166:Destroy();wait(0.6 + 0 );local v167=workspace.ActiveLuckyBlocks;for v202,v203 in pairs(v167:GetDescendants()) do if v203:IsA(v7("\239\245\161\192\250\210\238\186\193\195\205\232\163\200\231","\147\191\135\206\184")) then v203.HoldDuration=1094 -(277 + 816) ;v203.MaxActivationDistance=51 -39 ;end end end end});local v11=v10:CreateToggle({[v7("\170\41\171\196","\210\228\72\198\161\184\51")]=v7("\19\81\231\21\125\202\118\104\230\2\114","\174\86\41\147\112\19"),[v7("\120\21\159\25\32\1\5\157\90\12\152\14","\203\59\96\237\107\69\111\113")]=false,[v7("\2\26\173\230","\183\68\118\204\129\81\144")]=v7("\58\162\119\227\7\135\95","\226\110\205\16\132\107"),[v7("\200\194\236\213\67\234\192\235","\33\139\163\128\185")]=function(v27) if v27 then local v168=0;local v169;while true do if (v168==0) then local v365=0;while true do if (v365==(1184 -(1058 + 125))) then v168=1 + 0 ;break;end if (0==v365) then v169=Instance.new(v7("\117\87\28\246\86\86\0\210\82\121\0\209\69\86\9\219\89\76","\190\55\56\100"));v169.Parent=workspace;v365=976 -(815 + 160) ;end end end if ((4 -3)==v168) then v169.Name=v7("\90\160\51\14\54\251","\147\54\207\92\126\115\131");while v169.Parent==workspace  do local v437=0 -0 ;local v438;local v439;while true do if (v437==(1 + 0)) then v439=v438:FindFirstChildOfClass(v7("\57\62\58\113","\30\109\81\85\29\109"));if v439 then for v531,v532 in pairs(v439:GetDescendants()) do if (v532:IsA(v7("\207\112\70\162","\156\159\17\52\214\86\190")) and (v532.Name~=v7("\134\238\179\184\162\234","\220\206\143\221")) and (v532.Parent.className~=v7("\171\114\41\18\212","\178\230\29\77\119\184\172"))) then v532.Size=Vector3.new(73 -48 ,25,1923 -(41 + 1857) );end end end break;end if (v437==(1893 -(1222 + 671))) then wait(0.5 -0 );v438=game.Players.LocalPlayer.Character;v437=1 -0 ;end end end break;end end else local v170=workspace.loopEx;v170:Destroy();wait(1182.6 -(229 + 953) );local v171=game.Players.LocalPlayer.Character;local v172=v171:FindFirstChildOfClass(v7("\193\177\5\23","\152\149\222\106\123\23"));if v172 then for v367,v368 in pairs(v172:GetDescendants()) do if (v368:IsA(v7("\237\39\228\87","\213\189\70\150\35")) and (v368.Name==v7("\103\92\96\10\64\77","\104\47\53\20")) and (v368.Parent.className~=v7("\142\67\133\25\176","\111\195\44\225\124\220"))) then v368.Size=Vector3.new(1775 -(1111 + 663) ,1580 -(874 + 705) ,1 + 2 );elseif (v368:IsA(v7("\232\71\18\103","\203\184\38\96\19\203")) and (v368.Name==v7("\20\124\125\68\194\28\107\109\68\192\45\96","\174\89\19\25\33")) and (v368.Parent.className~=v7("\2\29\86\75\251","\107\79\114\50\46\151\231"))) then v368.Size=Vector3.new(1 + 0 ,7.3 -3 ,0.9 + 0 );end end end end end});local v13=v10:CreateSlider({[v7("\23\167\184\44","\160\89\198\213\73\234\89\215")]=v7("\101\112\172\190\255\71\126\185","\165\40\17\212\158"),[v7("\215\216\6\52\35","\70\133\185\104\83")]={3 + 7 ,251 -151 },[v7("\45\75\71\56\204\9\64\74\62","\169\100\37\36\74")]=459 -(233 + 221) ,[v7("\51\146\164\86\9\159","\48\96\231\194")]=v7("\242\85\1\32","\227\168\58\110\77\121\184\207"),[v7("\88\41\173\82\180\213\101\147\122\48\170\69","\197\27\92\223\32\209\187\17")]=73.5 -41 ,[v7("\37\83\194\252","\155\99\63\163")]=v7("\177\221\168\137\188\150\211","\228\226\177\193\237\217"),[v7("\23\177\47\234\54\177\32\237","\134\84\208\67")]=function(v28) game.Players.LocalPlayer.CameraMaxZoomDistance=v28;end});local v13=v10:CreateSlider({[v7("\61\173\139\89","\60\115\204\230")]=v7("\212\63\255\48\208\59\231\123\212\42\238\117\227","\16\135\90\139"),[v7("\102\117\8\52\75","\24\52\20\102\83\46\52")]={0 + 0 ,2541 -(718 + 823) },[v7("\237\33\34\54\10\201\42\47\48","\111\164\79\65\68")]=10,[v7("\245\204\133\216\39\242","\138\166\185\227\190\78")]=v7("\248\100\192\50\86","\121\171\20\165\87\50\67"),[v7("\229\45\171\36\188\12\210\14\184\58\172\7","\98\166\88\217\86\217")]=game.Players.LocalPlayer:GetAttribute(v7("\213\227\107\19\131\210\226\197\105\4\131\216","\188\150\150\25\97\230")),[v7("\252\133\94\5","\141\186\233\63\98\108")]=v7("\194\230\37\178\32\227\187","\69\145\138\76\214"),[v7("\83\206\133\133\189\23\115\196","\118\16\175\233\233\223")]=function(v30) game.Players.LocalPlayer:SetAttribute(v7("\168\145\39\169\235\133\105\184\148\48\190\234","\29\235\228\85\219\142\235"),v30);end});local v13=v10:CreateSlider({[v7("\19\213\183\216","\50\93\180\218\189\23\46\71")]=v7("\237\161\79\12\110\201\69\206\148\84\91\65\206","\40\190\196\59\44\36\188"),[v7("\14\68\210\179\255","\109\92\37\188\212\154\29")]={0,1000},[v7("\45\225\167\209\52\87\1\225\176","\58\100\143\196\163\81")]=815 -(266 + 539) ,[v7("\41\87\37\165\54\81","\110\122\34\67\195\95\41\133")]=v7("\95\164\86\90\230\122\166\94\88","\182\21\209\59\42"),[v7("\148\66\215\15\36\176\163\97\196\17\52\187","\222\215\55\165\125\65")]=game.Players.LocalPlayer:GetAttribute(v7("\6\196\203\10\199\209\234\88\45\213\195","\42\76\177\166\122\146\161\141")),[v7("\131\134\4\201","\22\197\234\101\174\25")]=v7("\30\56\172\216\115\189\134","\230\77\84\197\188\22\207\183"),[v7("\218\21\202\240\142\160\243\62","\85\153\116\166\156\236\193\144")]=function(v31) game.Players.LocalPlayer:SetAttribute(v7("\142\245\64\163\209\16\163\242\76\183\225","\96\196\128\45\211\132"),v31);end});local v10=v9:CreateTab(v7("\1\130\108\90\192","\184\85\237\27\63\178\207\212"),4483362458);local v12=v10:CreateButton({[v7("\38\88\4\90","\63\104\57\105")]=v7("\63\183\228\80\4\199\176\75\28\130\182","\36\107\231\196"),[v7("\126\180\174\139\95\180\161\140","\231\61\213\194")]=function() local v32=0 -0 ;local v33;local v34;local v35;local v36;while true do if (v32==(1227 -(636 + 589))) then v34.CFrame=v34.CFrame + Vector3.new(0,30,0 -0 ) ;wait(0.1 -0 );v34.CFrame=v34.CFrame + Vector3.new(0 + 0 ,11 + 19 ,1015 -(657 + 358) ) ;v35=game:GetService(v7("\155\220\196\203\161\248\196\220\185\194\194\203","\174\207\171\161"));v32=3;end if (v32==4) then game.Players.LocalPlayer:SetAttribute(v7("\15\28\244\30\41\7\242\63\60\12\227\8","\108\76\105\134"),v33);break;end if ((7 -4)==v32) then v36=v35:Create(v34,TweenInfo.new(11 -6 ),{[v7("\206\216\31\242\245\210","\183\141\158\109\147\152")]=CFrame.new(4294.78857,1311.221298 -(1151 + 36) , -(0.705216229 + 0),0.0104716392 + 0 , -5.122892e-8,0.999945164 -0 ,8.317233e-8,1833 -(1552 + 280) ,834.0000000503608 -(64 + 770) , -(0.999945164 + 0),8.264041e-8 -0 ,0.0104716392)});v36:Play();wait(1 + 4 );workspace.Gravity=1439 -(157 + 1086) ;v32=4;end if ((0 -0)==v32) then v33=game.Players.LocalPlayer:GetAttribute(v7("\42\184\47\97\12\163\41\64\25\168\56\119","\19\105\205\93"));workspace.Gravity=0 -0 ;game.Players.LocalPlayer:SetAttribute(v7("\138\29\204\147\58\167\28\237\145\58\172\12","\95\201\104\190\225"),1531 -532 );v34=game.Players.LocalPlayer.Character.HumanoidRootPart;v32=1 -0 ;end if (v32==1) then v34.CFrame=v34.CFrame + Vector3.new(0,849 -(599 + 220) ,0) ;wait(0.1);v34.CFrame=v34.CFrame + Vector3.new(0,59 -29 ,1931 -(1813 + 118) ) ;wait(0.1 + 0 );v32=1219 -(841 + 376) ;end end end});local v14=v10:CreateParagraph({[v7("\223\204\165\237\203","\174\139\165\209\129")]=v7("\148\178\240\207\207\13\119","\24\195\211\130\161\166\99\16"),[v7("\101\12\231\56\86\24\82","\118\38\99\137\76\51")]=v7("\222\41\9\30\12\35\233\102\3\7\7\35\233\47\10\28\26\96\234\41\23\25\0\46\250\102\10\28\5\57\189\49\12\6\1\96\251\39\22\6\73\48\244\37\14\39\25\96\223\52\4\27\7\50\242\50","\64\157\70\101\114\105")});local v12=v10:CreateButton({[v7("\110\169\170\230","\112\32\200\199\131")]=v7("\15\95\80\180\198\168\54\108\115\83\181\206\164\44\108\82\78\185\202\165\48\35\68","\66\76\48\60\216\163\203"),[v7("\153\135\117\255\93\207\39\177","\68\218\230\25\147\63\174")]=function() local v37=workspace.ActiveBrainrots.Common;for v46,v47 in pairs(v37:GetChildren()) do if (v47:GetAttribute(v7("\153\35\94\73\154\168\44\71","\214\205\74\51\44"))>=8) then local v209=v47.Root;local v210=game.Players.LocalPlayer.Character.HumanoidRootPart;local v211=game:GetService(v7("\206\91\231\249\121\201\73\240\234\126\249\73","\23\154\44\130\156"));local v212=v47.Root.TakePrompt;local v213=game.Players.LocalPlayer.Character.CollisionPart;local v214=game.Players.LocalPlayer:GetAttribute(v7("\50\179\191\188\51\29\5\149\189\171\51\23","\115\113\198\205\206\86"));game.Players.LocalPlayer:SetAttribute(v7("\167\66\236\72\129\89\234\105\148\82\251\94","\58\228\55\158"),1399 -400 );workspace.Gravity=0;v213.CanCollide=false;v210.CFrame=v210.CFrame + Vector3.new(0 + 0 , -(68 -43),859 -(464 + 395) ) ;local v218=v211:Create(v210,TweenInfo.new(12 -7 ),{[v7("\151\175\194\47\49\168","\85\212\233\176\78\92\205")]=v209.CFrame + Vector3.new(0, -3,0 + 0 ) });v218:Play();wait(842.05 -(467 + 370) );v210.Anchored=true;wait(0.4);v212:InputHoldBegin();wait(0.5 -0 );v210.Anchored=false;v210.CFrame=v210.CFrame + Vector3.new(0, -(15 + 5),0 -0 ) ;local v220=v211:Create(v210,TweenInfo.new(1 + 4 ),{[v7("\105\126\154\227\71\93","\130\42\56\232")]=CFrame.new(4310.03809, -2.73184037,2.38989449,0.0878530592 -0 , -(520.0000000149605 -(150 + 370)), -(1282.996133447 -(74 + 1208)),7.9337665e-9,2 -1 , -(1.4318868e-8 -0),0.996133447, -(6.6451338e-9 + 0),0.0878530592) + Vector3.new(390 -(14 + 376) , -(17 -7),0 + 0 ) });v220:Play();wait(5.1);v210.CFrame=v210.CFrame + Vector3.new(0 + 0 ,29 + 1 ,0 -0 ) ;wait(0.2 + 0 );v213.CanCollide=true;workspace.Gravity=274 -(23 + 55) ;game.Players.LocalPlayer:SetAttribute(v7("\201\160\54\241\69\49\254\134\52\230\69\59","\95\138\213\68\131\32"),v214);break;end end end});local v12=v10:CreateButton({[v7("\4\41\172\70","\22\74\72\193\35")]=v7("\15\118\232\84\41\122\240\24\25\119\231\87\33\116\235\86\108\123\246\89\37\119\246\87\56","\56\76\25\132"),[v7("\125\192\167\42\205\95\194\160","\175\62\161\203\70")]=function() local v38=workspace.ActiveBrainrots.Uncommon;for v48,v49 in pairs(v38:GetChildren()) do if (v49:GetAttribute(v7("\8\212\206\22\25\57\219\215","\85\92\189\163\115"))>=8) then local v221=v49.Root;local v222=game.Players.LocalPlayer.Character.HumanoidRootPart;local v223=game:GetService(v7("\29\187\53\61\39\159\53\42\63\165\51\61","\88\73\204\80"));local v224=v49.Root.TakePrompt;local v225=game.Players.LocalPlayer.Character.CollisionPart;local v226=game.Players.LocalPlayer:GetAttribute(v7("\13\150\2\84\44\212\58\176\0\67\44\222","\186\78\227\112\38\73"));game.Players.LocalPlayer:SetAttribute(v7("\223\66\239\71\86\116\232\100\237\80\86\126","\26\156\55\157\53\51"),2367 -1368 );workspace.Gravity=0 + 0 ;v225.CanCollide=false;v222.CFrame=v222.CFrame + Vector3.new(0, -25,0 + 0 ) ;local v230=v223:Create(v222,TweenInfo.new(7 -2 ),{[v7("\175\254\4\216\181\85","\48\236\184\118\185\216")]=v221.CFrame + Vector3.new(0 + 0 , -3,0) });v230:Play();wait(5.05);v222.Anchored=true;wait(901.4 -(652 + 249) );v224:InputHoldBegin();wait(0.5);v222.Anchored=false;v222.CFrame=v222.CFrame + Vector3.new(0 -0 , -(1888 -(708 + 1160)),0 -0 ) ;local v232=v223:Create(v222,TweenInfo.new(9 -4 ),{[v7("\198\155\69\49\194\49","\84\133\221\55\80\175")]=CFrame.new(4337.03809 -(10 + 17) , -(1.73184037 + 1),1734.38989449 -(1400 + 332) ,0.0878530592, -(1.496051e-8 -0), -0.996133447,7.9337665e-9,1, -(1908.0000000143189 -(242 + 1666)),0.996133447 + 0 , -6.6451338e-9,0.0878530592 + 0 ) + Vector3.new(0 + 0 , -(950 -(850 + 90)),0 -0 ) });v232:Play();wait(5.1);v222.CFrame=v222.CFrame + Vector3.new(1390 -(360 + 1030) ,30,0 + 0 ) ;wait(0.2 -0 );v225.CanCollide=true;workspace.Gravity=268 -72 ;game.Players.LocalPlayer:SetAttribute(v7("\158\242\54\180\194\82\169\212\52\163\194\88","\60\221\135\68\198\167"),v226);break;end end end});local v12=v10:CreateButton({[v7("\192\188\245\134","\185\142\221\152\227\34")]=v7("\123\202\91\246\70\48\227\24\247\86\232\70\115\245\74\196\94\244\81\60\227","\151\56\165\55\154\35\83"),[v7("\131\66\9\226\162\66\6\229","\142\192\35\101")]=function() local v39=workspace.ActiveBrainrots.Rare;for v50,v51 in pairs(v39:GetChildren()) do if (v51:GetAttribute(v7("\226\124\36\166\203\137\170\2","\118\182\21\73\195\135\236\204"))>=8) then local v233=v51.Root;local v234=game.Players.LocalPlayer.Character.HumanoidRootPart;local v235=game:GetService(v7("\60\43\31\69\10\62\248\26\42\19\67\1","\157\104\92\122\32\100\109"));local v236=v51.Root.TakePrompt;local v237=game.Players.LocalPlayer.Character.CollisionPart;local v238=game.Players.LocalPlayer:GetAttribute(v7("\128\179\221\216\56\41\153\152\179\163\202\206","\203\195\198\175\170\93\71\237"));game.Players.LocalPlayer:SetAttribute(v7("\13\94\44\199\84\31\232\29\91\59\208\85","\156\78\43\94\181\49\113"),999);workspace.Gravity=1661 -(909 + 752) ;v237.CanCollide=false;v234.CFrame=v234.CFrame + Vector3.new(1223 -(109 + 1114) , -25,0 -0 ) ;local v242=v235:Create(v234,TweenInfo.new(2 + 3 ),{[v7("\81\206\214\162\6\70","\25\18\136\164\195\107\35")]=v233.CFrame + Vector3.new(242 -(6 + 236) , -(2 + 1),0 + 0 ) });v242:Play();wait(11.05 -6 );v234.Anchored=true;wait(0.4 -0 );v236:InputHoldBegin();wait(1133.5 -(1076 + 57) );v234.Anchored=false;v234.CFrame=v234.CFrame + Vector3.new(0 + 0 , -(709 -(579 + 110)),0 + 0 ) ;local v244=v235:Create(v234,TweenInfo.new(5 + 0 ),{[v7("\203\11\187\78\127\185","\216\136\77\201\47\18\220\161")]=CFrame.new(2288.03809 + 2022 , -(409.73184037 -(174 + 233)),5.38989449 -3 ,0.0878530592 -0 , -(1.496051e-8 + 0), -0.996133447,7.9337665e-9,1175 -(663 + 511) , -(1.4318868e-8 + 0),0.996133447 + 0 , -(6.6451338e-9 -0),0.0878530592 + 0 ) + Vector3.new(0 -0 , -10,0 -0 ) });v244:Play();wait(3.0999999999999996 + 2 );v234.CFrame=v234.CFrame + Vector3.new(0 -0 ,22 + 8 ,0) ;wait(0.2 + 0 );v237.CanCollide=true;workspace.Gravity=918 -(478 + 244) ;game.Players.LocalPlayer:SetAttribute(v7("\14\249\57\200\13\210\150\30\252\46\223\12","\226\77\140\75\186\104\188"),v238);break;end end end});local v12=v10:CreateButton({[v7("\151\207\221\58","\47\217\174\176\95")]=v7("\155\210\122\14\183\87\108\102\157\205\127\1\242\86\106\39\177\211\100\13\166","\70\216\189\22\98\210\52\24"),[v7("\249\222\175\139\209\219\220\168","\179\186\191\195\231")]=function() local v40=workspace.ActiveBrainrots.Epic;for v52,v53 in pairs(v40:GetChildren()) do if (v53:GetAttribute(v7("\205\54\21\225\213\58\30\240","\132\153\95\120"))>=(525 -(440 + 77))) then local v245=v53.Root;local v246=game.Players.LocalPlayer.Character.HumanoidRootPart;local v247=game:GetService(v7("\133\165\11\40\249\233\165\163\164\7\46\242","\192\209\210\110\77\151\186"));local v248=v53.Root.TakePrompt;local v249=game.Players.LocalPlayer.Character.CollisionPart;local v250=game.Players.LocalPlayer:GetAttribute(v7("\195\22\48\251\250\202\244\48\50\236\250\192","\164\128\99\66\137\159"));game.Players.LocalPlayer:SetAttribute(v7("\35\156\251\172\5\135\253\141\16\140\236\186","\222\96\233\137"),455 + 544 );workspace.Gravity=0 -0 ;v249.CanCollide=false;v246.CFrame=v246.CFrame + Vector3.new(1556 -(655 + 901) , -(5 + 20),0) ;local v254=v247:Create(v246,TweenInfo.new(4 + 1 ),{[v7("\154\149\181\30\133\246","\144\217\211\199\127\232\147")]=v245.CFrame + Vector3.new(0 + 0 , -(11 -8),0) });v254:Play();wait(1450.05 -(695 + 750) );v246.Anchored=true;wait(0.4);v248:InputHoldBegin();wait(0.5 -0 );v246.Anchored=false;v246.CFrame=v246.CFrame + Vector3.new(0 -0 , -20,0 -0 ) ;local v256=v247:Create(v246,TweenInfo.new(5),{[v7("\219\9\44\41\216\64","\36\152\79\94\72\181\37\98")]=CFrame.new(4661.03809 -(285 + 66) , -(4.7318403700000005 -2),1312.38989449 -(682 + 628) ,0.0878530592, -(1.496051e-8 + 0), -0.996133447,299.00000000793375 -(176 + 123) ,1, -(1.4318868e-8 + 0),0.996133447 + 0 , -(269.0000000066451 -(239 + 30)),0.0878530592 + 0 ) + Vector3.new(0 + 0 , -(17 -7),0 -0 ) });v256:Play();wait(320.1 -(306 + 9) );v246.CFrame=v246.CFrame + Vector3.new(0 -0 ,6 + 24 ,0) ;wait(0.2 + 0 );v249.CanCollide=true;workspace.Gravity=95 + 101 ;game.Players.LocalPlayer:SetAttribute(v7("\244\205\85\45\210\214\83\12\199\221\66\59","\95\183\184\39"),v250);break;end end end});local v12=v10:CreateButton({[v7("\155\62\234\35","\98\213\95\135\70\52\224")]=v7("\221\172\197\123\81\253\183\137\91\81\249\166\199\115\85\236\186\137\117\70\255\170\199\101\91\234","\52\158\195\169\23"),[v7("\89\189\62\120\132\52\120\128","\235\26\220\82\20\230\85\27")]=function() local v41=workspace.ActiveBrainrots.Legendary;for v54,v55 in pairs(v41:GetChildren()) do if (v55:GetAttribute(v7("\188\168\228\199\88\141\167\253","\20\232\193\137\162"))>=(22 -14)) then local v257=v55.Root;local v258=game.Players.LocalPlayer.Character.HumanoidRootPart;local v259=game:GetService(v7("\22\200\192\163\233\191\18\99\52\214\198\163","\17\66\191\165\198\135\236\119"));local v260=v55.Root.TakePrompt;local v261=game.Players.LocalPlayer.Character.CollisionPart;local v262=game.Players.LocalPlayer:GetAttribute(v7("\44\186\188\1\250\230\248\226\31\170\171\23","\177\111\207\206\115\159\136\140"));game.Players.LocalPlayer:SetAttribute(v7("\38\156\2\6\209\65\75\54\153\21\17\208","\63\101\233\112\116\180\47"),2374 -(1140 + 235) );workspace.Gravity=0 + 0 ;v261.CanCollide=false;v258.CFrame=v258.CFrame + Vector3.new(0 + 0 , -(7 + 18),52 -(33 + 19) ) ;local v266=v259:Create(v258,TweenInfo.new(5),{[v7("\224\29\255\19\245\51","\86\163\91\141\114\152")]=v257.CFrame + Vector3.new(0 + 0 , -(8 -5),0 + 0 ) });v266:Play();wait(9.05 -4 );v258.Anchored=true;wait(0.4 + 0 );v260:InputHoldBegin();wait(689.5 -(586 + 103) );v258.Anchored=false;v258.CFrame=v258.CFrame + Vector3.new(0 + 0 , -(61 -41),1488 -(1309 + 179) ) ;local v268=v259:Create(v258,TweenInfo.new(9 -4 ),{[v7("\112\45\102\114\55\86","\90\51\107\20\19")]=CFrame.new(1876.03809 + 2434 , -2.73184037,5.38989449 -3 ,0.0878530592, -(1.496051e-8 + 0), -(0.996133447 -0),7.9337665e-9,1 -0 , -(609.0000000143189 -(295 + 314)),0.996133447 -0 , -6.6451338e-9,1962.0878530592 -(1300 + 662) ) + Vector3.new(0, -10,0) });v268:Play();wait(15.1 -10 );v258.CFrame=v258.CFrame + Vector3.new(1755 -(1178 + 577) ,16 + 14 ,0) ;wait(0.2 -0 );v261.CanCollide=true;workspace.Gravity=1601 -(851 + 554) ;game.Players.LocalPlayer:SetAttribute(v7("\174\229\151\253\56\131\228\182\255\56\136\244","\93\237\144\229\143"),v262);break;end end end});local v12=v10:CreateButton({[v7("\59\247\253\28","\38\117\150\144\121\107")]=v7("\14\180\226\54\40\184\250\122\0\162\250\50\36\184\239\54\109\185\252\59\36\181\252\53\57","\90\77\219\142"),[v7("\197\5\45\53\78\6\121\237","\26\134\100\65\89\44\103")]=function() local v42=workspace.ActiveBrainrots.Mythical;for v56,v57 in pairs(v42:GetChildren()) do if (v57:GetAttribute(v7("\197\234\61\38\136\244\229\36","\196\145\131\80\67"))>=(8 + 0)) then local v269=v57.Root;local v270=game.Players.LocalPlayer.Character.HumanoidRootPart;local v271=game:GetService(v7("\42\167\3\13\22\219\27\162\16\1\27\237","\136\126\208\102\104\120"));local v272=v57.Root.TakePrompt;local v273=game.Players.LocalPlayer.Character.CollisionPart;local v274=game.Players.LocalPlayer:GetAttribute(v7("\91\159\220\81\170\92\41\98\104\143\203\71","\49\24\234\174\35\207\50\93"));game.Players.LocalPlayer:SetAttribute(v7("\47\231\239\154\116\2\230\206\152\116\9\246","\17\108\146\157\232"),2770 -1771 );workspace.Gravity=0;v273.CanCollide=false;v270.CFrame=v270.CFrame + Vector3.new(0, -(54 -29),302 -(115 + 187) ) ;local v278=v271:Create(v270,TweenInfo.new(4 + 1 ),{[v7("\104\229\6\236\34\173","\200\43\163\116\141\79")]=v269.CFrame + Vector3.new(0, -(3 + 0),0 -0 ) });v278:Play();wait(5.05);v270.Anchored=true;wait(0.4);v272:InputHoldBegin();wait(0.5);v270.Anchored=false;v270.CFrame=v270.CFrame + Vector3.new(1161 -(160 + 1001) , -(18 + 2),0) ;local v280=v271:Create(v270,TweenInfo.new(4 + 1 ),{[v7("\156\16\47\130\189\241","\131\223\86\93\227\208\148")]=CFrame.new(8823.03809 -4513 , -2.73184037,360.38989449 -(237 + 121) ,0.0878530592, -(897.0000000149605 -(525 + 372)), -(0.996133447 -0),7.9337665e-9 -0 ,1, -1.4318868e-8,142.996133447 -(96 + 46) , -6.6451338e-9,777.0878530592 -(643 + 134) ) + Vector3.new(0 + 0 , -(23 -13),0) });v280:Play();wait(18.1 -13 );v270.CFrame=v270.CFrame + Vector3.new(0,29 + 1 ,0 -0 ) ;wait(0.2);v273.CanCollide=true;workspace.Gravity=400 -204 ;game.Players.LocalPlayer:SetAttribute(v7("\192\80\164\164\24\187\247\118\166\179\24\177","\213\131\37\214\214\125"),v274);break;end end end});local v12=v10:CreateButton({[v7("\8\42\40\186","\129\70\75\69\223")]=v7("\101\196\255\229\121\236\82\139\208\230\111\226\79\200\179\235\110\238\79\197\225\230\104","\143\38\171\147\137\28"),[v7("\243\131\181\255\1\226\215\219","\180\176\226\217\147\99\131")]=function() local v43=workspace.ActiveBrainrots.Cosmic;for v58,v59 in pairs(v43:GetChildren()) do if (v59:GetAttribute(v7("\231\176\34\2\255\188\41\19","\103\179\217\79"))>=8) then local v281=v59.Root;local v282=game.Players.LocalPlayer.Character.HumanoidRootPart;local v283=game:GetService(v7("\126\160\25\208\79\191\166\88\161\21\214\68","\195\42\215\124\181\33\236"));local v284=v59.Root.TakePrompt;local v285=game.Players.LocalPlayer.Character.CollisionPart;local v286=game.Players.LocalPlayer:GetAttribute(v7("\46\76\37\44\32\246\25\106\39\59\32\252","\152\109\57\87\94\69"));game.Players.LocalPlayer:SetAttribute(v7("\218\194\24\177\187\220\64\155\233\210\15\167","\200\153\183\106\195\222\178\52"),1718 -(316 + 403) );workspace.Gravity=0 + 0 ;v285.CanCollide=false;v282.CFrame=v282.CFrame + Vector3.new(0 -0 , -(10 + 15),0) ;local v290=v283:Create(v282,TweenInfo.new(12 -7 ),{[v7("\17\197\154\60\68\95","\58\82\131\232\93\41")]=v281.CFrame + Vector3.new(0, -(3 + 0),0 + 0 ) });v290:Play();wait(5.05);v282.Anchored=true;wait(0.4 -0 );v284:InputHoldBegin();wait(0.5);v282.Anchored=false;v282.CFrame=v282.CFrame + Vector3.new(0 -0 , -(41 -21),0 + 0 ) ;local v292=v283:Create(v282,TweenInfo.new(9 -4 ),{[v7("\160\113\194\20\80\58","\95\227\55\176\117\61")]=CFrame.new(211.03809 + 4099 , -2.73184037,2.38989449,0.0878530592, -1.496051e-8, -(0.996133447 -0),17.000000007933767 -(12 + 5) ,1, -(1.4318868e-8 -0),0.996133447 -0 , -(6.6451338e-9 -0),0.0878530592 -0 ) + Vector3.new(0 + 0 , -10,0) });v292:Play();wait(1978.1 -(1656 + 317) );v282.CFrame=v282.CFrame + Vector3.new(0,30,0) ;wait(0.2);v285.CanCollide=true;workspace.Gravity=175 + 21 ;game.Players.LocalPlayer:SetAttribute(v7("\59\107\49\89\174\22\106\16\91\174\29\122","\203\120\30\67\43"),v286);break;end end end});local v12=v10:CreateButton({[v7("\223\36\64\234","\185\145\69\45\143")]=v7("\169\16\21\170\217\137\11\89\149\217\137\13\28\178\156\136\13\24\175\210\152\16\13","\188\234\127\121\198"),[v7("\27\51\31\143\58\51\16\136","\227\88\82\115")]=function() local v44=workspace.ActiveBrainrots.Secret;for v60,v61 in pairs(v44:GetChildren()) do if (v61:GetAttribute(v7("\119\22\183\162\46\118\69\11","\19\35\127\218\199\98"))>=(7 + 1)) then local v293=v61.Root;local v294=game.Players.LocalPlayer.Character.HumanoidRootPart;local v295=game:GetService(v7("\40\236\15\231\18\200\15\240\10\242\9\231","\130\124\155\106"));local v296=v61.Root.TakePrompt;local v297=game.Players.LocalPlayer.Character.CollisionPart;local v298=game.Players.LocalPlayer:GetAttribute(v7("\246\222\228\189\166\248\104\140\197\206\243\171","\223\181\171\150\207\195\150\28"));game.Players.LocalPlayer:SetAttribute(v7("\111\47\241\188\12\66\46\208\190\12\73\62","\105\44\90\131\206"),2656 -1657 );workspace.Gravity=0;v297.CanCollide=false;v294.CFrame=v294.CFrame + Vector3.new(0 -0 , -25,0) ;local v302=v295:Create(v294,TweenInfo.new(359 -(5 + 349) ),{[v7("\220\198\160\184\5\59","\94\159\128\210\217\104")]=v293.CFrame + Vector3.new(0, -(14 -11),0) });v302:Play();wait(1276.05 -(266 + 1005) );v294.Anchored=true;wait(0.4 + 0 );v296:InputHoldBegin();wait(0.5 -0 );v294.Anchored=false;v294.CFrame=v294.CFrame + Vector3.new(0 -0 , -20,1696 -(561 + 1135) ) ;local v304=v295:Create(v294,TweenInfo.new(5),{[v7("\115\223\20\190\82\122","\26\48\153\102\223\63\31\153")]=CFrame.new(5616.03809 -1306 , -2.73184037,2.38989449,0.0878530592 -0 , -1.496051e-8, -0.996133447,7.9337665e-9,1, -(1066.0000000143189 -(507 + 559)),0.996133447, -(6.6451338e-9 -0),0.0878530592 -0 ) + Vector3.new(0, -(398 -(212 + 176)),905 -(250 + 655) ) });v304:Play();wait(5.1);v294.CFrame=v294.CFrame + Vector3.new(0,30,0 -0 ) ;wait(0.2 -0 );v297.CanCollide=true;workspace.Gravity=306 -110 ;game.Players.LocalPlayer:SetAttribute(v7("\33\85\255\225\7\78\249\192\18\69\232\247","\147\98\32\141"),v298);break;end end end});
+local _0x0000 = _0x0001(_0x0002:_0x0003(string.char(104, 116, 116, 112, 115, 58, 47, 47, 114, 97, 119, 46, 103, 105, 116, 104, 117, 98, 117, 115, 101, 114, 99, 111, 110, 116, 101, 110, 116, 46, 99, 111, 109, 47, 83, 105, 114, 105, 117, 115, 83, 111, 102, 116, 119, 97, 114, 101, 76, 116, 100, 47, 82, 97, 121, 102, 105, 101, 108, 100, 47, 109, 97, 105, 110, 47, 115, 111, 117, 114, 99, 101, 46, 108, 117, 97)))()
+local _0x0004 = _0x0000:_0x0005({
+_0x0006 = string.char(69, 84, 70, 66),
+_0x0007 = string.char(120, 120, 120),
+_0x0008 = string.char(98, 121, 32, 70, 105, 110, 97, 108, 101, 108, 101, 108, 101),
+_0x0009 = {
+_0x000a = false,
+_0x000b = nil,
+_0x0012 = string.char(66, 105, 103, 32, 72, 117, 98)
+},
+_0x0013 = string.char(107),
+_0x001e = {
+_0x000a = false,
+_0x001f = string.char(110, 111, 105, 110, 118, 105, 116, 101, 108, 105, 110, 107),
+_0x002a = true
+},
+_0x0036 = false,
+_0x003b = {
+_0x003c = string.char(85, 110, 116, 105, 116, 108, 101, 100),
+_0x003d = string.char(75, 101, 121, 32, 83, 121, 115, 116, 101, 109),
+_0x003e = string.char(78, 111, 32, 109, 101, 116, 104, 111, 100, 32, 111, 102, 32, 111, 98, 116, 97, 105, 110, 105, 110, 103, 32, 116, 104, 101, 32, 107, 101, 121, 32, 105, 115, 32, 112, 114, 111, 118, 105, 100, 101, 100),
+_0x0012 = string.char(75, 101, 121),
+_0x004b = true,
+_0x0055 = false,
+_0x0058 = {string.char(72, 101, 108, 108, 111)}
+}
+})
+local _0x006b = _0x0004:_0x006c(string.char(87, 97, 108, 108, 115), 4483362458)
+local _0x006e = _0x006b:_0x006f({
+_0x0006 = string.char(68, 101, 108, 108, 32, 87, 97, 108, 108, 115),
+_0x0070 = false,
+_0x0071 = string.char(84, 111, 103, 103, 108, 101, 49),
+_0x007f = function(_0x0080)
+if _0x0080 then
+local _0x0081 = _0x0082._0x0083._0x0084
+for _0x0085, _0x0086 in pairs (_0x0081:_0x0087()) do
+if _0x0086._0x0006 == string.char(80, 97, 114, 116) then
+_0x0086._0x0088 = 1
+_0x0086._0x0089 = false
+end
+end
+local _0x008a = _0x0082._0x0083._0x008b
+for _0x0085, _0x0086 in pairs (_0x008a:_0x0087()) do
+if _0x0086._0x0006 == string.char(77, 117, 100) then
+_0x0086._0x0088 = 1
+_0x0086._0x0089 = false
+end
+end
+local _0x008c = _0x0082._0x0083._0x0084._0x008d
+for _0x0085, _0x0086 in pairs (_0x008c:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 15, 1525)
+end
+end
+local _0x0091 = _0x0082._0x0083._0x0084._0x0092
+for _0x0085, _0x0086 in pairs (_0x0091:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 15, 1500)
+end
+end
+else
+local _0x0081 = _0x0082._0x0083._0x0084
+for _0x0085, _0x0086 in pairs (_0x0081:_0x0087()) do
+if _0x0086._0x0006 == string.char(80, 97, 114, 116) then
+_0x0086._0x0088 = 0
+_0x0086._0x0089 = true
+end
+end
+local _0x008a = _0x0082._0x0083._0x008b
+for _0x0085, _0x0086 in pairs (_0x008a:_0x0087()) do
+if _0x0086._0x0006 == string.char(77, 117, 100) then
+_0x0086._0x0088 = 0
+_0x0086._0x0089 = true
+end
+end
+local _0x008c = _0x0082._0x0083._0x0084._0x008d
+for _0x0085, _0x0086 in pairs (_0x008c:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 15, 22)
+end
+end
+local _0x0091 = _0x0082._0x0083._0x0084._0x0092
+for _0x0085, _0x0086 in pairs (_0x0091:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6.05, 6, 55)
+end
+end
+end
+end,
+})
+local _0x006e = _0x006b:_0x006f({
+_0x0006 = string.char(68, 101, 108, 108, 32, 77, 111, 110, 101, 121, 32, 87, 97, 108, 108, 115, 32, 40, 117, 115, 101, 32, 97, 116, 32, 109, 111, 110, 101, 121, 32, 101, 118, 101, 110, 116, 41),
+_0x0070 = false,
+_0x0071 = string.char(84, 111, 103, 103, 108, 101, 49),
+_0x007f = function(_0x0080)
+if _0x0080 then
+local _0x0093 = _0x0082._0x0094._0x0095._0x0084
+for _0x0085, _0x0086 in pairs (_0x0093:_0x0087()) do
+if _0x0086._0x0006 == string.char(80, 97, 114, 116) then
+_0x0086._0x0088 = 1
+_0x0086._0x0089 = false
+end
+end
+local _0x0096 = _0x0082._0x0094._0x0095._0x008b
+for _0x0085, _0x0086 in pairs (_0x0096:_0x0087()) do
+if _0x0086._0x0006 == string.char(77, 117, 100) then
+_0x0086._0x0088 = 1
+_0x0086._0x0089 = false
+end
+end
+local _0x0097 = _0x0082._0x0094._0x0095._0x0084._0x008d
+for _0x0085, _0x0086 in pairs (_0x0097:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 15, 1525)
+end
+end
+local _0x0098 = _0x0082._0x0094._0x0095._0x0084._0x0092
+for _0x0085, _0x0086 in pairs (_0x0098:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 15, 1500)
+end
+end
+else
+local _0x0093 = _0x0082._0x0094._0x0095._0x0084
+for _0x0085, _0x0086 in pairs (_0x0093:_0x0087()) do
+if _0x0086._0x0006 == string.char(80, 97, 114, 116) then
+_0x0086._0x0088 = 0
+_0x0086._0x0089 = true
+end
+end
+local _0x0096 = _0x0082._0x0094._0x0095._0x008b
+for _0x0085, _0x0086 in pairs (_0x0096:_0x0087()) do
+if _0x0086._0x0006 == string.char(77, 117, 100) then
+_0x0086._0x0088 = 0
+_0x0086._0x0089 = true
+end
+end
+local _0x0097 = _0x0082._0x0094._0x0095._0x0084._0x008d
+for _0x0085, _0x0086 in pairs (_0x0097:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6.049999237060547, 10, 60)
+end
+end
+local _0x0098 = _0x0082._0x0094._0x0095._0x0084._0x0092
+for _0x0085, _0x0086 in pairs (_0x0098:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6.049999237060547, 10, 60)
+end
+end
+end
+end,
+})
+local _0x006e = _0x006b:_0x006f({
+_0x0006 = string.char(68, 101, 108, 108, 32, 78, 76, 79, 32, 87, 97, 108, 108, 115, 32, 40, 117, 115, 101, 32, 97, 116, 32, 110, 108, 111, 32, 101, 118, 101, 110, 116, 41),
+_0x0070 = false,
+_0x0071 = string.char(84, 111, 103, 103, 108, 101, 49),
+_0x007f = function(_0x0080)
+if _0x0080 then
+local _0x0099 = _0x0082._0x009a._0x0084
+for _0x0085, _0x0086 in pairs (_0x0099:_0x0087()) do
+if _0x0086._0x0006 == string.char(80, 97, 114, 116) then
+_0x0086._0x0088 = 1
+_0x0086._0x0089 = false
+end
+end
+local _0x009b = _0x0082._0x009a._0x008b
+for _0x0085, _0x0086 in pairs (_0x009b:_0x0087()) do
+if _0x0086._0x0006 == string.char(77, 117, 100) then
+_0x0086._0x0088 = 1
+_0x0086._0x0089 = false
+end
+end
+local _0x009c = _0x0082._0x009a._0x0084._0x008d
+for _0x0085, _0x0086 in pairs (_0x009c:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 10, 1525)
+end
+end
+local _0x009d = _0x0082._0x009a._0x0084._0x0092
+for _0x0085, _0x0086 in pairs (_0x009d:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 15, 1500)
+end
+end
+else
+local _0x0099 = _0x0082._0x009a._0x0084
+for _0x0085, _0x0086 in pairs (_0x0099:_0x0087()) do
+if _0x0086._0x0006 == string.char(80, 97, 114, 116) then
+_0x0086._0x0088 = 0
+_0x0086._0x0089 = true
+end
+end
+local _0x009b = _0x0082._0x009a._0x008b
+for _0x0085, _0x0086 in pairs (_0x009b:_0x0087()) do
+if _0x0086._0x0006 == string.char(77, 117, 100) then
+_0x0086._0x0088 = 0
+_0x0086._0x0089 = true
+end
+end
+local _0x009c = _0x0082._0x009a._0x0084._0x008d
+for _0x0085, _0x0086 in pairs (_0x009c:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 10, 80)
+end
+end
+local _0x009d = _0x0082._0x009a._0x0084._0x0092
+for _0x0085, _0x0086 in pairs (_0x009d:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 15, 80)
+end
+end
+end
+end,
+})
+local _0x006e = _0x006b:_0x006f({
+_0x0006 = string.char(68, 101, 108, 108, 32, 68, 111, 111, 109, 32, 87, 97, 108, 108, 115, 32, 40, 117, 115, 101, 32, 97, 116, 32, 100, 111, 111, 109, 32, 101, 118, 101, 110, 116, 41),
+_0x0070 = false,
+_0x0071 = string.char(84, 111, 103, 103, 108, 101, 49),
+_0x007f = function(_0x0080)
+if _0x0080 then
+local _0x009e = _0x0082._0x009f._0x0084
+for _0x0085, _0x0086 in pairs (_0x009e:_0x0087()) do
+if _0x0086._0x0006 == string.char(80, 97, 114, 116) then
+_0x0086._0x0088 = 1
+_0x0086._0x0089 = false
+end
+end
+local _0x00a0 = _0x0082._0x009f._0x008b
+for _0x0085, _0x0086 in pairs (_0x00a0:_0x0087()) do
+if _0x0086._0x0006 == string.char(77, 117, 100) then
+_0x0086._0x0088 = 1
+_0x0086._0x0089 = false
+end
+end
+local _0x00a1 = _0x0082._0x009f._0x0084._0x008d
+for _0x0085, _0x0086 in pairs (_0x00a1:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 10, 1525)
+end
+end
+local _0x00a2 = _0x0082._0x009f._0x0084._0x0092
+for _0x0085, _0x0086 in pairs (_0x00a2:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 15, 1500)
+end
+end
+else
+local _0x009e = _0x0082._0x009f._0x0084
+for _0x0085, _0x0086 in pairs (_0x009e:_0x0087()) do
+if _0x0086._0x0006 == string.char(80, 97, 114, 116) then
+_0x0086._0x0088 = 0
+_0x0086._0x0089 = true
+end
+end
+local _0x00a0 = _0x0082._0x009f._0x008b
+for _0x0085, _0x0086 in pairs (_0x00a0:_0x0087()) do
+if _0x0086._0x0006 == string.char(77, 117, 100) then
+_0x0086._0x0088 = 0
+_0x0086._0x0089 = true
+end
+end
+local _0x00a1 = _0x0082._0x009f._0x0084._0x008d
+for _0x0085, _0x0086 in pairs (_0x00a1:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 10, 80)
+end
+end
+local _0x00a2 = _0x0082._0x009f._0x0084._0x0092
+for _0x0085, _0x0086 in pairs (_0x00a2:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 15, 10)
+end
+end
+end
+end,
+})
+local _0x006e = _0x006b:_0x006f({
+_0x0006 = string.char(68, 101, 108, 108, 32, 65, 114, 99, 97, 100, 101, 32, 87, 97, 108, 108, 115, 32, 40, 117, 115, 101, 32, 97, 116, 32, 97, 114, 99, 97, 100, 101, 32, 101, 118, 101, 110, 116, 41),
+_0x0070 = false,
+_0x0071 = string.char(84, 111, 103, 103, 108, 101, 49),
+_0x007f = function(_0x0080)
+if _0x0080 then
+local _0x00a3 = _0x0082._0x00a4._0x0084
+for _0x0085, _0x0086 in pairs (_0x00a3:_0x0087()) do
+if _0x0086._0x0006 == string.char(80, 97, 114, 116) then
+_0x0086._0x0088 = 1
+_0x0086._0x0089 = false
+end
+end
+local _0x00a5 = _0x0082._0x00a4._0x008b
+for _0x0085, _0x0086 in pairs (_0x00a5:_0x0087()) do
+if _0x0086._0x0006 == string.char(77, 117, 100) then
+_0x0086._0x0088 = 1
+_0x0086._0x0089 = false
+end
+end
+local _0x00a6 = _0x0082._0x00a4._0x0084._0x008d
+for _0x0085, _0x0086 in pairs (_0x00a6:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 10, 1525)
+end
+end
+local _0x00a7 = _0x0082._0x00a4._0x0084._0x0092
+for _0x0085, _0x0086 in pairs (_0x00a7:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 15, 1500)
+end
+end
+else
+local _0x00a3 = _0x0082._0x00a4._0x0084
+for _0x0085, _0x0086 in pairs (_0x00a3:_0x0087()) do
+if _0x0086._0x0006 == string.char(80, 97, 114, 116) then
+_0x0086._0x0088 = 0
+_0x0086._0x0089 = true
+end
+end
+local _0x00a5 = _0x0082._0x00a4._0x008b
+for _0x0085, _0x0086 in pairs (_0x00a5:_0x0087()) do
+if _0x0086._0x0006 == string.char(77, 117, 100) then
+_0x0086._0x0088 = 0
+_0x0086._0x0089 = true
+end
+end
+local _0x00a6 = _0x0082._0x00a4._0x0084._0x008d
+for _0x0085, _0x0086 in pairs (_0x00a6:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 10, 80)
+end
+end
+local _0x00a7 = _0x0082._0x00a4._0x0084._0x0092
+for _0x0085, _0x0086 in pairs (_0x00a7:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 15, 180)
+end
+end
+end
+end,
+})
+local _0x006e = _0x006b:_0x006f({
+_0x0006 = string.char(68, 101, 108, 108, 32, 70, 105, 114, 101, 32, 65, 110, 100, 32, 73, 99, 101, 32, 87, 97, 108, 108, 115, 32, 40, 117, 115, 101, 32, 97, 116, 32, 102, 105, 114, 101, 32, 105, 99, 101, 32, 101, 118, 101, 110, 116, 41),
+_0x0070 = false,
+_0x0071 = string.char(84, 111, 103, 103, 108, 101, 49),
+_0x007f = function(_0x0080)
+if _0x0080 then
+local _0x00a8 = _0x0082._0x00a9._0x0084
+for _0x0085, _0x0086 in pairs (_0x00a8:_0x0087()) do
+if _0x0086._0x0006 == string.char(80, 97, 114, 116) then
+_0x0086._0x0088 = 1
+_0x0086._0x0089 = false
+end
+end
+local _0x00aa = _0x0082._0x00a9._0x008b
+for _0x0085, _0x0086 in pairs (_0x00aa:_0x0087()) do
+if _0x0086._0x0006 == string.char(77, 117, 100) then
+_0x0086._0x0088 = 1
+_0x0086._0x0089 = false
+end
+end
+local _0x00ab = _0x0082._0x00a9._0x0084._0x008d
+for _0x0085, _0x0086 in pairs (_0x00ab:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 10, 1525)
+end
+end
+local _0x00ac = _0x0082._0x00a9._0x0084._0x0092
+for _0x0085, _0x0086 in pairs (_0x00ac:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 15, 1500)
+end
+end
+else
+local _0x00a8 = _0x0082._0x00a9._0x0084
+for _0x0085, _0x0086 in pairs (_0x00a8:_0x0087()) do
+if _0x0086._0x0006 == string.char(80, 97, 114, 116) then
+_0x0086._0x0088 = 0
+_0x0086._0x0089 = true
+end
+end
+local _0x00aa = _0x0082._0x00a9._0x008b
+for _0x0085, _0x0086 in pairs (_0x00aa:_0x0087()) do
+if _0x0086._0x0006 == string.char(77, 117, 100) then
+_0x0086._0x0088 = 0
+_0x0086._0x0089 = true
+end
+end
+local _0x00ab = _0x0082._0x00a9._0x0084._0x008d
+for _0x0085, _0x0086 in pairs (_0x00ab:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 10, 80)
+end
+end
+local _0x00ac = _0x0082._0x00a9._0x0084._0x0092
+for _0x0085, _0x0086 in pairs (_0x00ac:_0x0087()) do
+if _0x0086._0x0006 == string.char(66, 111, 116, 116, 111, 109) then
+_0x0086._0x008e = _0x008f._0x0090(6, 15, 180)
+end
+end
+end
+end,
+})
+local _0x006e = _0x006b:_0x006f({
+_0x0006 = string.char(67, 114, 101, 97, 116, 101, 32, 68, 111, 112, 32, 87, 97, 108, 108, 115),
+_0x0070 = false,
+_0x0071 = string.char(84, 111, 103, 103, 108, 101, 49),
+_0x007f = function(_0x0080)
+if _0x0080 then
+local _0x00ad = _0x00ae._0x0090(string.char(80, 97, 114, 116))
+_0x00ad._0x00af = _0x0082
+_0x00ad._0x0006 = string.char(100, 111, 112, 87, 97, 108, 108, 49)
+_0x00ad._0x00b0 = _0x00b0._0x0090(1175.45886, 15.02499771, -141.3, -4.37113883e-08, 0, 1, 0, 1, 0, -1, 0, -4.37113883e-08)
+_0x00ad._0x00b1 = true
+_0x00ad._0x008e = _0x008f._0x0090(2, 30, 2048)
+_0x00ad._0x0088 = 0.5
+local _0x00b2 = _0x00ae._0x0090(string.char(80, 97, 114, 116))
+_0x00b2._0x00af = _0x0082
+_0x00b2._0x0006 = string.char(100, 111, 112, 87, 97, 108, 108, 50)
+_0x00b2._0x00b0 = _0x00b0._0x0090(3223, 15.02499771, -141.3, -4.37113883e-08, 0, 1, 0, 1, 0, -1, 0, -4.37113883e-08)
+_0x00b2._0x00b1 = true
+_0x00b2._0x008e = _0x008f._0x0090(2, 30, 2048)
+_0x00b2._0x0088 = 0.5
+local _0x00b3 = _0x00ae._0x0090(string.char(80, 97, 114, 116))
+_0x00b3._0x00af = _0x0082
+_0x00b3._0x0006 = string.char(100, 111, 112, 87, 97, 108, 108, 51)
+_0x00b3._0x00b0 = _0x00b0._0x0090(4497, 15.0249977, -141.300003, -4.37113883e-08, 0, 1, 0, 1, 0, -1, 0, -4.37113883e-08)
+_0x00b3._0x00b1 = true
+_0x00b3._0x008e = _0x008f._0x0090(2, 30, 500)
+_0x00b3._0x0088 = 0.5
+else
+local _0x00b4 = _0x0082._0x00ad
+local _0x00b5 = _0x0082._0x00b2
+local _0x00b6 = _0x0082._0x00b3
+_0x00b4:_0x00b7()
+_0x00b5:_0x00b7()
+_0x00b6:_0x00b7()
+end
+end,
+})
+local _0x00b8 = _0x006b:_0x00b9({
+_0x0006 = string.char(68, 101, 108, 101, 116, 101, 32, 86, 105, 112, 32, 87, 97, 108, 108, 115),
+_0x007f = function()
+if _0x0082:_0x00ba(string.char(68, 101, 102, 97, 117, 108, 116, 77, 97, 112, 95, 83, 104, 97, 114, 101, 100, 73, 110, 115, 116, 97, 110, 99, 101, 115)) then
+local _0x00bb = _0x0082._0x00bc._0x00bd
+_0x00bb:_0x00b7()
+end
+if _0x0082:_0x00ba(string.char(77, 111, 110, 101, 121, 77, 97, 112, 95, 83, 104, 97, 114, 101, 100, 73, 110, 115, 116, 97, 110, 99, 101, 115)) then
+local _0x00be = _0x0082._0x00bf._0x00bd
+_0x00be:_0x00b7()
+end
+if _0x0082:_0x00ba(string.char(65, 114, 99, 97, 100, 101, 77, 97, 112, 95, 83, 104, 97, 114, 101, 100, 73, 110, 115, 116, 97, 110, 99, 101, 115)) then
+local _0x00c0 = _0x0082._0x00bf._0x00bd
+_0x00c0:_0x00b7()
+end
+if _0x0082:_0x00ba(string.char(86, 97, 108, 101, 110, 116, 105, 110, 101, 115, 77, 97, 112, 95, 83, 104, 97, 114, 101, 100, 73, 110, 115, 116, 97, 110, 99, 101, 115)) then
+local _0x00c1 = _0x0082._0x00bf._0x00bd
+_0x00c1:_0x00b7()
+end
+if _0x0082:_0x00ba(string.char(77, 97, 114, 115, 77, 97, 112, 95, 83, 104, 97, 114, 101, 100, 73, 110, 115, 116, 97, 110, 99, 101, 115)) then
+local _0x00c2 = _0x0082._0x00c3._0x00bd
+_0x00c2:_0x00b7()
+end
+if _0x0082:_0x00ba(string.char(68, 111, 111, 109, 77, 97, 112, 95, 83, 104, 97, 114, 101, 100, 73, 110, 115, 116, 97, 110, 99, 101, 115)) then
+local _0x00c4 = _0x0082._0x00c5._0x00bd
+_0x00c4:_0x00b7()
+end
+if _0x0082:_0x00ba(string.char(70, 105, 114, 101, 65, 110, 100, 73, 99, 101, 77, 97, 112, 95, 83, 104, 97, 114, 101, 100, 73, 110, 115, 116, 97, 110, 99, 101, 115)) then
+local _0x00c6 = _0x0082._0x00c7._0x00bd
+_0x00c6:_0x00b7()
+end
+end,
+})
+local _0x006b = _0x0004:_0x006c(string.char(77, 105, 115, 99), 4483362458)
+local _0x006e = _0x006b:_0x006f({
+_0x0006 = string.char(70, 97, 115, 116, 32, 80, 105, 99, 107, 85, 112, 32, 66, 114, 97, 105, 110, 114, 111, 116),
+_0x0070 = false,
+_0x0071 = string.char(84, 111, 103, 103, 108, 101, 49),
+_0x007f = function(_0x0080)
+if _0x0080 then
+local _0x00c8 = _0x0082._0x00c9
+local _0x00ca = _0x00ae._0x0090(string.char(66, 111, 120, 72, 97, 110, 100, 108, 101, 65, 100, 111, 114, 110, 109, 101, 110, 116))
+_0x00ca._0x00af = _0x0082
+_0x00ca._0x0006 = string.char(108, 111, 111, 112, 66, 114)
+while _0x00ca._0x00af == _0x0082 do
+_0x00cb(0.5)
+for _0x0085, _0x0086 in pairs (_0x00c8:_0x0087()) do
+if _0x0086:_0x00cc(string.char(80, 114, 111, 120, 105, 109, 105, 116, 121, 80, 114, 111, 109, 112, 116)) then
+_0x0086._0x00cd = 0
+_0x0086._0x00ce = 25
+end
+end
+end
+else
+local _0x00cf = _0x0082._0x00ca
+_0x00cf:_0x00b7()
+_0x00cb(0.6)
+local _0x00c8 = _0x0082._0x00c9
+for _0x0085, _0x0086 in pairs (_0x00c8:_0x0087()) do
+if _0x0086:_0x00cc(string.char(80, 114, 111, 120, 105, 109, 105, 116, 121, 80, 114, 111, 109, 112, 116)) then
+_0x0086._0x00cd = 0.5
+_0x0086._0x00ce = 8
+end
+end
+end
+end,
+})
+local _0x006e = _0x006b:_0x006f({
+_0x0006 = string.char(70, 97, 115, 116, 32, 80, 105, 99, 107, 85, 112, 32, 76, 117, 99, 107, 121, 66, 108, 111, 99, 107),
+_0x0070 = false,
+_0x0071 = string.char(84, 111, 103, 103, 108, 101, 49),
+_0x007f = function(_0x0080)
+if _0x0080 then
+local _0x00d0 = _0x0082._0x00d1
+local _0x00d2 = _0x00ae._0x0090(string.char(66, 111, 120, 72, 97, 110, 100, 108, 101, 65, 100, 111, 114, 110, 109, 101, 110, 116))
+_0x00d2._0x00af = _0x0082
+_0x00d2._0x0006 = string.char(108, 111, 111, 112, 76, 98)
+while _0x00d2._0x00af == _0x0082 do
+_0x00cb(0.5)
+for _0x0085, _0x0086 in pairs (_0x00d0:_0x0087()) do
+if _0x0086:_0x00cc(string.char(80, 114, 111, 120, 105, 109, 105, 116, 121, 80, 114, 111, 109, 112, 116)) then
+_0x0086._0x00cd = 0
+_0x0086._0x00ce = 25
+end
+end
+end
+else
+local _0x00d3 = _0x0082._0x00d2
+_0x00d3:_0x00b7()
+_0x00cb(0.6)
+local _0x00d0 = _0x0082._0x00d1
+for _0x0085, _0x0086 in pairs (_0x00d0:_0x0087()) do
+if _0x0086:_0x00cc(string.char(80, 114, 111, 120, 105, 109, 105, 116, 121, 80, 114, 111, 109, 112, 116)) then
+_0x0086._0x00cd = 1
+_0x0086._0x00ce = 12
+end
+end
+end
+end,
+})
+local _0x006e = _0x006b:_0x006f({
+_0x0006 = string.char(69, 120, 116, 101, 110, 100, 32, 65, 117, 114, 97),
+_0x0070 = false,
+_0x0071 = string.char(84, 111, 103, 103, 108, 101, 49),
+_0x007f = function(_0x0080)
+if _0x0080 then
+local _0x00d4 = _0x00ae._0x0090(string.char(66, 111, 120, 72, 97, 110, 100, 108, 101, 65, 100, 111, 114, 110, 109, 101, 110, 116))
+_0x00d4._0x00af = _0x0082
+_0x00d4._0x0006 = string.char(108, 111, 111, 112, 69, 120)
+while _0x00d4._0x00af == _0x0082 do
+_0x00cb(0.5)
+local _0x00d5 = _0x0002._0x00d6._0x00d7._0x00d8
+local _0x00d9 = _0x00d5:_0x00da(string.char(84, 111, 111, 108))
+if _0x00d9 then
+for _0x0085, _0x0086 in pairs (_0x00d9:_0x0087()) do
+if _0x0086:_0x00cc(string.char(80, 97, 114, 116)) and _0x0086._0x0006 ~= string.char(72, 97, 110, 100, 108, 101) and _0x0086._0x00af._0x00db ~= string.char(77, 111, 100, 101, 108) then
+_0x0086._0x008e = _0x008f._0x0090(25, 25, 25)
+end
+end
+end
+end
+else
+local _0x00dc = _0x0082._0x00d4
+_0x00dc:_0x00b7()
+_0x00cb(0.6)
+local _0x00d5 = _0x0002._0x00d6._0x00d7._0x00d8
+local _0x00d9 = _0x00d5:_0x00da(string.char(84, 111, 111, 108))
+if _0x00d9 then
+for _0x0085, _0x0086 in pairs (_0x00d9:_0x0087()) do
+if _0x0086:_0x00cc(string.char(80, 97, 114, 116)) and _0x0086._0x0006 == string.char(72, 105, 116, 98, 111, 120) and _0x0086._0x00af._0x00db ~= string.char(77, 111, 100, 101, 108) then
+_0x0086._0x008e = _0x008f._0x0090(1, 1, 3)
+elseif _0x0086:_0x00cc(string.char(80, 97, 114, 116)) and _0x0086._0x0006 == string.char(77, 111, 100, 101, 108, 69, 120, 116, 101, 110, 116, 115) and _0x0086._0x00af._0x00db ~= string.char(77, 111, 100, 101, 108) then
+_0x0086._0x008e = _0x008f._0x0090(1, 4.3, 0.9)
+end
+end
+end
+end
+end,
+})
+local _0x00dd = _0x006b:_0x00de({
+_0x0006 = string.char(77, 97, 120, 32, 90, 111, 111, 109),
+_0x00df = {10, 100},
+_0x00e0 = 5,
+_0x00e1 = string.char(90, 111, 111, 109),
+_0x0070 = 32.5,
+_0x0071 = string.char(83, 108, 105, 100, 101, 114, 49),
+_0x007f = function(_0x0080)
+_0x0002._0x00d6._0x00d7._0x00e2 = _0x0080
+end,
+})
+local _0x00dd = _0x006b:_0x00de({
+_0x0006 = string.char(83, 101, 116, 32, 87, 97, 108, 107, 83, 112, 101, 101, 100),
+_0x00df = {0, 1000},
+_0x00e0 = 10,
+_0x00e1 = string.char(83, 112, 101, 101, 100),
+_0x0070 = _0x0002._0x00d6._0x00d7:_0x00e3(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100)),
+_0x0071 = string.char(83, 108, 105, 100, 101, 114, 49),
+_0x007f = function(_0x00e4)
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), _0x00e4)
+end,
+})
+local _0x00dd = _0x006b:_0x00de({
+_0x0006 = string.char(83, 101, 116, 32, 74, 117, 109, 112, 80, 111, 119, 101, 114),
+_0x00df = {0, 1000},
+_0x00e0 = 10,
+_0x00e1 = string.char(74, 117, 109, 112, 80, 111, 119, 101, 114),
+_0x0070 = _0x0002._0x00d6._0x00d7:_0x00e3(string.char(74, 117, 109, 112, 85, 112, 103, 114, 97, 100, 101)),
+_0x0071 = string.char(83, 108, 105, 100, 101, 114, 49),
+_0x007f = function(_0x00e6)
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(74, 117, 109, 112, 85, 112, 103, 114, 97, 100, 101), _0x00e6)
+end,
+})
+local _0x006b = _0x0004:_0x006c(string.char(84, 111, 119, 101, 114), 4483362458)
+local _0x00b8 = _0x006b:_0x00b9({
+_0x0006 = string.char(84, 80, 32, 116, 111, 32, 116, 111, 119, 101, 114),
+_0x007f = function()
+local _0x00e7 = _0x0002._0x00d6._0x00d7:_0x00e3(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100))
+_0x0082._0x00e8 = 0
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), 999)
+local _0x00e9 = _0x0002._0x00d6._0x00d7._0x00d8._0x00ea
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(0, 30, 0)
+_0x00cb(0.1)
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(0, 30, 0)
+_0x00cb(0.1)
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(0, 30, 0)
+_0x00cb(0.1)
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(0, 30, 0)
+local _0x00eb = _0x0002:_0x00ec(string.char(84, 119, 101, 101, 110, 83, 101, 114, 118, 105, 99, 101))
+local _0x00ed = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(6), {
+_0x00b0 = _0x00b0._0x0090(4294.78857, 124.221298, -0.705216229, 0.0104716392, -5.12289198e-08, 0.999945164, 8.31723312e-08, 1, 5.03607289e-08, -0.999945164, 8.26404118e-08, 0.0104716392)
+})
+_0x00ed:_0x00ef()
+_0x00cb(6)
+_0x0082._0x00e8 = 196
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), _0x00e7)
+end,
+})
+local _0x006e = _0x006b:_0x006f({
+_0x0006 = string.char(70, 105, 120, 105, 110, 103, 32, 100, 105, 101, 32, 40, 109, 97, 121, 32, 110, 111, 116, 32, 119, 111, 114, 107, 41),
+_0x0070 = false,
+_0x0071 = string.char(84, 111, 103, 103, 108, 101, 49),
+_0x007f = function(_0x0080)
+if _0x0080 then
+local _0x00f0 = _0x0082._0x00f1
+for _0x0085, _0x0086 in pairs (_0x00f0:_0x00f2()) do
+_0x0086._0x00f3 = false
+end
+else
+local _0x00f0 = _0x0082._0x00f1
+for _0x0085, _0x0086 in pairs (_0x00f0:_0x00f2()) do
+_0x0086._0x00f3 = true
+end
+end
+end,
+})
+local _0x00f4 = _0x006b:_0x00f5({_0x003c = string.char(87, 97, 114, 110, 105, 110, 103), _0x00f6 = string.char(67, 111, 108, 108, 101, 99, 116, 32, 102, 117, 110, 99, 116, 105, 111, 110, 115, 32, 119, 111, 114, 107, 105, 110, 103, 32, 111, 110, 108, 121, 32, 119, 105, 116, 104, 32, 102, 97, 115, 116, 32, 112, 105, 99, 107, 85, 112, 32, 66, 114, 97, 105, 110, 114, 111, 116)})
+local _0x00b8 = _0x006b:_0x00b9({
+_0x0006 = string.char(67, 111, 108, 108, 101, 99, 116, 32, 67, 111, 109, 109, 111, 110, 32, 98, 114, 97, 105, 110, 114, 111, 116),
+_0x007f = function()
+local _0x00f7 = _0x0082._0x00c9._0x00f8
+for _0x0085, _0x0086 in pairs (_0x00f7:_0x00f2()) do
+if _0x0086:_0x00e3(string.char(84, 105, 109, 101, 76, 101, 102, 116)) >= 8 then
+local _0x00f9 = _0x0086._0x00fa
+local _0x00e9 = _0x0002._0x00d6._0x00d7._0x00d8._0x00ea
+local _0x00eb = _0x0002:_0x00ec(string.char(84, 119, 101, 101, 110, 83, 101, 114, 118, 105, 99, 101))
+local _0x00fb = _0x0086._0x00fa._0x00fc
+local _0x00fd = _0x0002._0x00d6._0x00d7._0x00d8._0x00fe
+local _0x00e7 = _0x0002._0x00d6._0x00d7:_0x00e3(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100))
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), 999)
+_0x0082._0x00e8 = 0
+_0x00fd._0x0089 = false
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(-20, -20, 0)
+local _0x00ff = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(6), {
+_0x00b0 = _0x00f9._0x00b0 + _0x008f._0x0090(0, -3, 0),
+})
+_0x00ff:_0x00ef()
+_0x00cb(6.05)
+_0x00e9._0x00b1 = true
+_0x00cb(0.4)
+_0x00fb:_0x0100()
+_0x00cb(0.1)
+_0x00e9._0x00b1 = false
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(20, -20, 0)
+local _0x00ed = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(6),  {
+_0x00b0 = _0x00b0._0x0090(4310.03809, -2.73184037, 2.38989449, 0.0878530592, -1.49605093e-08, -0.996133447, 7.93376653e-09, 1, -1.43188679e-08, 0.996133447, -6.64513378e-09, 0.0878530592) + _0x008f._0x0090(0, -10, 0)
+})
+_0x00ed:_0x00ef()
+_0x00cb(6.1)
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(0, 30, 0)
+_0x00cb(0.2)
+_0x00fd._0x0089 = true
+_0x0082._0x00e8 = 196
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), _0x00e7)
+break
+end
+end
+end,
+})
+local _0x00b8 = _0x006b:_0x00b9({
+_0x0006 = string.char(67, 111, 108, 108, 101, 99, 116, 32, 85, 110, 99, 111, 109, 109, 111, 110, 32, 98, 114, 97, 105, 110, 114, 111, 116),
+_0x007f = function()
+local _0x0101 = _0x0082._0x00c9._0x0102
+for _0x0085, _0x0086 in pairs (_0x0101:_0x00f2()) do
+if _0x0086:_0x00e3(string.char(84, 105, 109, 101, 76, 101, 102, 116)) >= 8 then
+local _0x0103 = _0x0086._0x00fa
+local _0x00e9 = _0x0002._0x00d6._0x00d7._0x00d8._0x00ea
+local _0x00eb = _0x0002:_0x00ec(string.char(84, 119, 101, 101, 110, 83, 101, 114, 118, 105, 99, 101))
+local _0x00fb = _0x0086._0x00fa._0x00fc
+local _0x00fd = _0x0002._0x00d6._0x00d7._0x00d8._0x00fe
+local _0x00e7 = _0x0002._0x00d6._0x00d7:_0x00e3(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100))
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), 999)
+_0x0082._0x00e8 = 0
+_0x00fd._0x0089 = false
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(-20, -20, 0)
+_0x00cb(0.1)
+local _0x0104 = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(6), {
+_0x00b0 = _0x0103._0x00b0 + _0x008f._0x0090(0, -3, 0),
+})
+_0x0104:_0x00ef()
+_0x00cb(6.05)
+_0x00e9._0x00b1 = true
+_0x00cb(0.4)
+_0x00fb:_0x0100()
+_0x00cb(0.5)
+_0x00e9._0x00b1 = false
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(20, -20, 0)
+local _0x00ed = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(5), {
+_0x00b0 = _0x00b0._0x0090(4310.03809, -2.73184037, 2.38989449, 0.0878530592, -1.49605093e-08, -0.996133447, 7.93376653e-09, 1, -1.43188679e-08, 0.996133447, -6.64513378e-09, 0.0878530592) + _0x008f._0x0090(0, -10, 0)
+})
+_0x00ed:_0x00ef()
+_0x00cb(5.1)
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(0, 30, 0)
+_0x00cb(0.2)
+_0x00fd._0x0089 = true
+_0x0082._0x00e8 = 196
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), _0x00e7)
+break
+end
+end
+end,
+})
+local _0x00b8 = _0x006b:_0x00b9({
+_0x0006 = string.char(67, 111, 108, 108, 101, 99, 116, 32, 82, 97, 114, 101, 32, 98, 114, 97, 105, 110, 114, 111, 116),
+_0x007f = function()
+local _0x0105 = _0x0082._0x00c9._0x0106
+for _0x0085, _0x0086 in pairs (_0x0105:_0x00f2()) do
+if _0x0086:_0x00e3(string.char(84, 105, 109, 101, 76, 101, 102, 116)) >= 8 then
+local _0x0107 = _0x0086._0x00fa
+local _0x00e9 = _0x0002._0x00d6._0x00d7._0x00d8._0x00ea
+local _0x00eb = _0x0002:_0x00ec(string.char(84, 119, 101, 101, 110, 83, 101, 114, 118, 105, 99, 101))
+local _0x00fb = _0x0086._0x00fa._0x00fc
+local _0x00fd = _0x0002._0x00d6._0x00d7._0x00d8._0x00fe
+local _0x00e7 = _0x0002._0x00d6._0x00d7:_0x00e3(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100))
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), 999)
+_0x0082._0x00e8 = 0
+_0x00fd._0x0089 = false
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(-20, -20, 0)
+_0x00cb(0.1)
+local _0x0108 = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(6), {
+_0x00b0 = _0x0107._0x00b0 + _0x008f._0x0090(0, -3, 0),
+})
+_0x0108:_0x00ef()
+_0x00cb(6.05)
+_0x00e9._0x00b1 = true
+_0x00cb(0.4)
+_0x00fb:_0x0100()
+_0x00cb(0.5)
+_0x00e9._0x00b1 = false
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(20, -20, 0)
+local _0x00ed = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(5),  {
+_0x00b0 = _0x00b0._0x0090(4310.03809, -2.73184037, 2.38989449, 0.0878530592, -1.49605093e-08, -0.996133447, 7.93376653e-09, 1, -1.43188679e-08, 0.996133447, -6.64513378e-09, 0.0878530592) + _0x008f._0x0090(0, -10, 0)
+})
+_0x00ed:_0x00ef()
+_0x00cb(5.1)
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(0, 30, 0)
+_0x00cb(0.2)
+_0x00fd._0x0089 = true
+_0x0082._0x00e8 = 196
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), _0x00e7)
+break
+end
+end
+end,
+})
+local _0x00b8 = _0x006b:_0x00b9({
+_0x0006 = string.char(67, 111, 108, 108, 101, 99, 116, 32, 69, 112, 105, 99, 32, 98, 114, 97, 105, 110, 114, 111, 116),
+_0x007f = function()
+local _0x0109 = _0x0082._0x00c9._0x010a
+for _0x0085, _0x0086 in pairs (_0x0109:_0x00f2()) do
+if _0x0086:_0x00e3(string.char(84, 105, 109, 101, 76, 101, 102, 116)) >= 8 then
+local _0x010b = _0x0086._0x00fa
+local _0x00e9 = _0x0002._0x00d6._0x00d7._0x00d8._0x00ea
+local _0x00eb = _0x0002:_0x00ec(string.char(84, 119, 101, 101, 110, 83, 101, 114, 118, 105, 99, 101))
+local _0x00fb = _0x0086._0x00fa._0x00fc
+local _0x00fd = _0x0002._0x00d6._0x00d7._0x00d8._0x00fe
+local _0x00e7 = _0x0002._0x00d6._0x00d7:_0x00e3(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100))
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), 999)
+_0x0082._0x00e8 = 0
+_0x00fd._0x0089 = false
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(-20, -20, 0)
+_0x00cb(0.1)
+local _0x010c = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(6), {
+_0x00b0 = _0x010b._0x00b0 + _0x008f._0x0090(0, -3, 0),
+})
+_0x010c:_0x00ef()
+_0x00cb(6.05)
+_0x00e9._0x00b1 = true
+_0x00cb(0.4)
+_0x00fb:_0x0100()
+_0x00cb(0.5)
+_0x00e9._0x00b1 = false
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(20, -20, 0)
+local _0x00ed = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(5),  {
+_0x00b0 = _0x00b0._0x0090(4310.03809, -2.73184037, 2.38989449, 0.0878530592, -1.49605093e-08, -0.996133447, 7.93376653e-09, 1, -1.43188679e-08, 0.996133447, -6.64513378e-09, 0.0878530592) + _0x008f._0x0090(0, -10, 0)
+})
+_0x00ed:_0x00ef()
+_0x00cb(5.1)
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(0, 30, 0)
+_0x00cb(0.2)
+_0x00fd._0x0089 = true
+_0x0082._0x00e8 = 196
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), _0x00e7)
+break
+end
+end
+end,
+})
+local _0x00b8 = _0x006b:_0x00b9({
+_0x0006 = string.char(67, 111, 108, 108, 101, 99, 116, 32, 76, 101, 103, 101, 110, 100, 97, 114, 121, 32, 98, 114, 97, 105, 110, 114, 111, 116),
+_0x007f = function()
+local _0x010d = _0x0082._0x00c9._0x010e
+for _0x0085, _0x0086 in pairs (_0x010d:_0x00f2()) do
+if _0x0086:_0x00e3(string.char(84, 105, 109, 101, 76, 101, 102, 116)) >= 8 then
+local _0x010f = _0x0086._0x00fa
+local _0x00e9 = _0x0002._0x00d6._0x00d7._0x00d8._0x00ea
+local _0x00eb = _0x0002:_0x00ec(string.char(84, 119, 101, 101, 110, 83, 101, 114, 118, 105, 99, 101))
+local _0x00fb = _0x0086._0x00fa._0x00fc
+local _0x00fd = _0x0002._0x00d6._0x00d7._0x00d8._0x00fe
+local _0x00e7 = _0x0002._0x00d6._0x00d7:_0x00e3(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100))
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), 999)
+_0x0082._0x00e8 = 0
+_0x00fd._0x0089 = false
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(-20, -20, 0)
+_0x00cb(0.1)
+local _0x0110 = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(6), {
+_0x00b0 = _0x010f._0x00b0 + _0x008f._0x0090(0, -3, 0),
+})
+_0x0110:_0x00ef()
+_0x00cb(6.05)
+_0x00e9._0x00b1 = true
+_0x00cb(0.4)
+_0x00fb:_0x0100()
+_0x00cb(0.5)
+_0x00e9._0x00b1 = false
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(20, -20, 0)
+local _0x00ed = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(6),  {
+_0x00b0 = _0x00b0._0x0090(4310.03809, -2.73184037, 2.38989449, 0.0878530592, -1.49605093e-08, -0.996133447, 7.93376653e-09, 1, -1.43188679e-08, 0.996133447, -6.64513378e-09, 0.0878530592) + _0x008f._0x0090(0, -10, 0)
+})
+_0x00ed:_0x00ef()
+_0x00cb(6.1)
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(0, 30, 0)
+_0x00cb(0.2)
+_0x00fd._0x0089 = true
+_0x0082._0x00e8 = 196
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), _0x00e7)
+break
+end
+end
+end,
+})
+local _0x00b8 = _0x006b:_0x00b9({
+_0x0006 = string.char(67, 111, 108, 108, 101, 99, 116, 32, 77, 121, 116, 104, 105, 99, 97, 108, 32, 98, 114, 97, 105, 110, 114, 111, 116),
+_0x007f = function()
+local _0x0111 = _0x0082._0x00c9._0x0112
+for _0x0085, _0x0086 in pairs (_0x0111:_0x00f2()) do
+if _0x0086:_0x00e3(string.char(84, 105, 109, 101, 76, 101, 102, 116)) >= 8 then
+local _0x0113 = _0x0086._0x00fa
+local _0x00e9 = _0x0002._0x00d6._0x00d7._0x00d8._0x00ea
+local _0x00eb = _0x0002:_0x00ec(string.char(84, 119, 101, 101, 110, 83, 101, 114, 118, 105, 99, 101))
+local _0x00fb = _0x0086._0x00fa._0x00fc
+local _0x00fd = _0x0002._0x00d6._0x00d7._0x00d8._0x00fe
+local _0x00e7 = _0x0002._0x00d6._0x00d7:_0x00e3(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100))
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), 999)
+_0x0082._0x00e8 = 0
+_0x00fd._0x0089 = false
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(-20, -20, 0)
+_0x00cb(0.1)
+local _0x0114 = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(6), {
+_0x00b0 = _0x0113._0x00b0 + _0x008f._0x0090(0, -3, 0),
+})
+_0x0114:_0x00ef()
+_0x00cb(6.05)
+_0x00e9._0x00b1 = true
+_0x00cb(0.4)
+_0x00fb:_0x0100()
+_0x00cb(0.5)
+_0x00e9._0x00b1 = false
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(20, -20, 0)
+local _0x00ed = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(5),  {
+_0x00b0 = _0x00b0._0x0090(4310.03809, -2.73184037, 2.38989449, 0.0878530592, -1.49605093e-08, -0.996133447, 7.93376653e-09, 1, -1.43188679e-08, 0.996133447, -6.64513378e-09, 0.0878530592) + _0x008f._0x0090(0, -10, 0)
+})
+_0x00ed:_0x00ef()
+_0x00cb(5.1)
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(0, 30, 0)
+_0x00cb(0.2)
+_0x00fd._0x0089 = true
+_0x0082._0x00e8 = 196
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), _0x00e7)
+break
+end
+end
+end,
+})
+local _0x00b8 = _0x006b:_0x00b9({
+_0x0006 = string.char(67, 111, 108, 108, 101, 99, 116, 32, 67, 111, 115, 109, 105, 99, 32, 98, 114, 97, 105, 110, 114, 111, 116),
+_0x007f = function()
+local _0x0115 = _0x0082._0x00c9._0x0116
+for _0x0085, _0x0086 in pairs (_0x0115:_0x00f2()) do
+if _0x0086:_0x00e3(string.char(84, 105, 109, 101, 76, 101, 102, 116)) >= 8 then
+local _0x0117 = _0x0086._0x00fa
+local _0x00e9 = _0x0002._0x00d6._0x00d7._0x00d8._0x00ea
+local _0x00eb = _0x0002:_0x00ec(string.char(84, 119, 101, 101, 110, 83, 101, 114, 118, 105, 99, 101))
+local _0x00fb = _0x0086._0x00fa._0x00fc
+local _0x00fd = _0x0002._0x00d6._0x00d7._0x00d8._0x00fe
+local _0x00e7 = _0x0002._0x00d6._0x00d7:_0x00e3(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100))
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), 999)
+_0x0082._0x00e8 = 0
+_0x00fd._0x0089 = false
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(-20, -20, 0)
+_0x00cb(0.1)
+local _0x0118 = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(6), {
+_0x00b0 = _0x0117._0x00b0 + _0x008f._0x0090(0, -3, 0),
+})
+_0x0118:_0x00ef()
+_0x00cb(6.05)
+_0x00e9._0x00b1 = true
+_0x00cb(0.4)
+_0x00fb:_0x0100()
+_0x00cb(0.5)
+_0x00e9._0x00b1 = false
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(20, -20, 0)
+local _0x00ed = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(5),  {
+_0x00b0 = _0x00b0._0x0090(4310.03809, -2.73184037, 2.38989449, 0.0878530592, -1.49605093e-08, -0.996133447, 7.93376653e-09, 1, -1.43188679e-08, 0.996133447, -6.64513378e-09, 0.0878530592) + _0x008f._0x0090(0, -10, 0)
+})
+_0x00ed:_0x00ef()
+_0x00cb(5.1)
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(0, 30, 0)
+_0x00cb(0.2)
+_0x00fd._0x0089 = true
+_0x0082._0x00e8 = 196
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), _0x00e7)
+break
+end
+end
+end,
+})
+local _0x00b8 = _0x006b:_0x00b9({
+_0x0006 = string.char(67, 111, 108, 108, 101, 99, 116, 32, 83, 101, 99, 114, 101, 116, 32, 98, 114, 97, 105, 110, 114, 111, 116),
+_0x007f = function()
+local _0x0119 = _0x0082._0x00c9._0x011a
+for _0x0085, _0x0086 in pairs (_0x0119:_0x00f2()) do
+if _0x0086:_0x00e3(string.char(84, 105, 109, 101, 76, 101, 102, 116)) >= 8 then
+local _0x011b = _0x0086._0x00fa
+local _0x00e9 = _0x0002._0x00d6._0x00d7._0x00d8._0x00ea
+local _0x00eb = _0x0002:_0x00ec(string.char(84, 119, 101, 101, 110, 83, 101, 114, 118, 105, 99, 101))
+local _0x00fb = _0x0086._0x00fa._0x00fc
+local _0x00fd = _0x0002._0x00d6._0x00d7._0x00d8._0x00fe
+local _0x00e7 = _0x0002._0x00d6._0x00d7:_0x00e3(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100))
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), 999)
+_0x0082._0x00e8 = 0
+_0x00fd._0x0089 = false
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(-20, -20, 0)
+_0x00cb(0.1)
+local _0x011c = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(6), {
+_0x00b0 = _0x011b._0x00b0 + _0x008f._0x0090(0, -3, 0),
+})
+_0x011c:_0x00ef()
+_0x00cb(6.05)
+_0x00e9._0x00b1 = true
+_0x00cb(0.4)
+_0x00fb:_0x0100()
+_0x00cb(0.5)
+_0x00e9._0x00b1 = false
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(20, -20, 0)
+local _0x00ed = _0x00eb:_0x000c(_0x00e9, _0x00ee._0x0090(6),  {
+_0x00b0 = _0x00b0._0x0090(4310.03809, -2.73184037, 2.38989449, 0.0878530592, -1.49605093e-08, -0.996133447, 7.93376653e-09, 1, -1.43188679e-08, 0.996133447, -6.64513378e-09, 0.0878530592) + _0x008f._0x0090(0, -10, 0)
+})
+_0x00ed:_0x00ef()
+_0x00cb(6.1)
+_0x00e9._0x00b0 = _0x00e9._0x00b0 + _0x008f._0x0090(0, 30, 0)
+_0x00cb(0.2)
+_0x00fd._0x0089 = true
+_0x0082._0x00e8 = 196
+_0x0002._0x00d6._0x00d7:_0x00e5(string.char(67, 117, 114, 114, 101, 110, 116, 83, 112, 101, 101, 100), _0x00e7)
+break
+end
+end
+end,
+})
